@@ -9,29 +9,33 @@
   </head>
   <body>
     <header class="page-header">
-      <a>
-        <img src="./img/logo.svg" width="202" height="52" alt="">
-      </a>
-      <ul class="page-header__contacts contacts-list">
-        <li>
-          <a href="mailto:info@sd.ru">info@sd.ru</a>
-        </li>
-        <li>
-          <a href="tel:+74950005252">+7 (495) 000 52 52</a>
-        </li>
-      </ul>
-      <button>Заказать звонок</button>
+      <div class="container">
+        <a>
+          <img src="./img/logo.svg" width="202" height="52" alt="">
+        </a>
+        <ul class="page-header__contacts contacts-list">
+          <li>
+            <a href="mailto:info@sd.ru">info@sd.ru</a>
+          </li>
+          <li>
+            <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+          </li>
+        </ul>
+        <button>Заказать звонок</button>
+      </div>
     </header>
     <main class="page-main">
       <section class="promo">
-        <h1>Печатные платы</h1>
-        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="">
-          <span>Получить бесплатную консультацию</span>
-          <span>Бесплатная консультация</span>
-        </a>
+        <div class="promo__container container">
+          <h1>Печатные платы</h1>
+          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="">
+            <span>Получить бесплатную консультацию</span>
+            <span>Бесплатная консультация</span>
+          </a>
+        </div>
       </section>
-      <section class="advantage">
+      <section class="advantage container">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul>
           <h3>Оперативные сроки</h3>
@@ -60,7 +64,7 @@
           </p>
         </ul>
       </section>
-      <section class="about-company">
+      <section class="about-company container">
         <h2>О компании</h2>
         <p>
           Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
@@ -74,122 +78,128 @@
         <a href="">Подробнее</a>
       </section>
       <section class="services">
-        <h2>Service Device предлагает следующие товары и услуги</h2>
-        <ul>
-          <li>
-            <a href="">Производство печатных плат</a>
-          </li>
-          <li>
-            <a href="">Монтаж печатных плат</a>
-          </li>
-          <li>
-            <a href="">Комплектующие для светотехники</a>
-          </li>
-        </ul>
+        <div class="services__container container">
+          <h2>Service Device предлагает следующие товары и услуги</h2>
+          <ul>
+            <li>
+              <a href="">Производство печатных плат</a>
+            </li>
+            <li>
+              <a href="">Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a href="">Комплектующие для светотехники</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="user-data">
-        <h2>Остались вопросы? Задайте их нам!</h2>
-        <p>Мы проконсультируем Вас бесплатно</p>
-        <form class="user-data__form" action="#" method="post">
-          <div class="user-data__contacts">
-            <label class="visually-hidden" for="name">Введите Ваше Имя</label>
-            <input maxlength="50" minlength="1" name="name" type="text" id="name" placeholder="Имя"
-            aria-label="Поле для ввода Вашего имени" required>
-          </div>
-          <div class="user-data__contacts">
-            <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-            <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон"
-            aria-label="Поле для ввода Вашего номера телефона" required>
-          </div>
-          <div class="user-data__textarea">
-            <label class="visually-hidden" for="textarea">Ваш вопрос</label>
-            <textarea minlength="1" maxlength="1000" type="textarea" placeholder="Ваш вопрос" required></textarea>
-          </div>
-          <button>Задать вопрос</button>
-          <div class="user-data__checkbox">
-            <label class="visually-hidden" for="checkbox">Я согласен на обработку персональных данных</label>
-            <input type="checkbox" id="checkbox" checked>
-          </div>
-        </form>
+        <div class="user-data__container container">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="user-data__form" action="#" method="post">
+            <div class="user-data__contacts">
+              <label class="visually-hidden" for="name">Введите Ваше Имя</label>
+              <input maxlength="50" minlength="1" name="name" type="text" id="name" placeholder="Имя"
+              aria-label="Поле для ввода Вашего имени" required>
+            </div>
+            <div class="user-data__contacts">
+              <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+              <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон"
+              aria-label="Поле для ввода Вашего номера телефона" required>
+            </div>
+            <div class="user-data__textarea">
+              <label class="visually-hidden" for="textarea">Ваш вопрос</label>
+              <textarea minlength="1" maxlength="1000" type="textarea" placeholder="Ваш вопрос" required></textarea>
+            </div>
+            <button>Задать вопрос</button>
+            <div class="user-data__checkbox">
+              <label class="visually-hidden" for="checkbox">Я согласен на обработку персональных данных</label>
+              <input type="checkbox" id="checkbox" checked>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a>
-        <img src="./img/logo.svg" width="202" height="52" alt="">
-      </a>
-      <ul class="page-footer__social-list social-list">
-        <li>
-          <a href="">
-            <span class="visually-hidden">Ссылка на социальную сеть фейсбук</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="visually-hidden">Ссылка на социальную сеть одноклассники</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="visually-hidden">Ссылка на социальную сеть вконтакте</span>
-          </a>
-        </li>
-      </ul>
-      <div class="sections">
-        <ul>
+      <div class="page-footer__container container">
+        <a>
+          <img src="./img/logo.svg" width="202" height="52" alt="">
+        </a>
+        <ul class="page-footer__social-list social-list">
           <li>
-            <a href="">О компании</a>
+            <a href="">
+              <span class="visually-hidden">Ссылка на социальную сеть фейсбук</span>
+            </a>
           </li>
           <li>
-            <a href="">Продукты</a>
+            <a href="">
+              <span class="visually-hidden">Ссылка на социальную сеть одноклассники</span>
+            </a>
           </li>
           <li>
-            <a href="">Производство печатных плат</a>
-          </li>
-          <li>
-            <a href="">Монтаж печатных плат</a>
-          </li>
-          <li>
-            <a href="">Комплектующие </a>
-          </li>
-          <li>
-            <a href=""> Доставка </a>
-          </li>
-          <li>
-            <a href="">Контакты</a>
+            <a href="">
+              <span class="visually-hidden">Ссылка на социальную сеть вконтакте</span>
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="our-office">
-        <ul>
-          <li>
-            <a href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-          </li>
-          <li>
-            <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-          </li>
-          <li>
-            <a href="+79250038767">+7 (925) 003-87-67</a>
-          </li>
-          <li>
-            <a href="+792692608079">+7 (926) 926-080-79</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__bottom">
-        <ul class="special-list">
-          <li>
-            <a href="">Все права защищены</a>
-          </li>
-          <li>
-            <a href="">1999-2018 SD Service Devices</a>
-          </li>
-          <li>
-            <a href="">Условия конфиденциальности</a>
-          </li>
-          <li>
-            <a href="">Developed by wow studio </a>
-          </li>
-        </ul>
+        <div class="sections">
+          <ul>
+            <li>
+              <a href="">О компании</a>
+            </li>
+            <li>
+              <a href="">Продукты</a>
+            </li>
+            <li>
+              <a href="">Производство печатных плат</a>
+            </li>
+            <li>
+              <a href="">Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a href="">Комплектующие </a>
+            </li>
+            <li>
+              <a href=""> Доставка </a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="our-office">
+          <ul>
+            <li>
+              <a href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+            </li>
+            <li>
+              <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li>
+              <a href="+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li>
+              <a href="+792692608079">+7 (926) 926-080-79</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__bottom">
+          <ul class="special-list">
+            <li>
+              <a href="">Все права защищены</a>
+            </li>
+            <li>
+              <a href="">1999-2018 SD Service Devices</a>
+            </li>
+            <li>
+              <a href="">Условия конфиденциальности</a>
+            </li>
+            <li>
+              <a href="">Developed by wow studio </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
