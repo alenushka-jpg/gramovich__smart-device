@@ -1,1 +1,12 @@
-//комментарий
+.our-office ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.our-office a {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba($additional-dark, 0.5);
+  text-decoration: none;
+}

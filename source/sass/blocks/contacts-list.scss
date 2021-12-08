@@ -1,1 +1,11 @@
-//rjv
+.contacts-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contacts-list a {
+  line-height: 18px;
+  color: $basic-white;
+  text-decoration: none;
+}
