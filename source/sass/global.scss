@@ -45,6 +45,20 @@ img {
   height: auto;
 }
 
+.logo-light {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
