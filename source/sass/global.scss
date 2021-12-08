@@ -15,14 +15,28 @@ body {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
-  margin: 0;
-  padding: 0;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+h2 {
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+  }
 }
 
 img {
