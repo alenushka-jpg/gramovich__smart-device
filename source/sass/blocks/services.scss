@@ -1,1 +1,23 @@
-//комментарий
+.services {
+  background-color: $additional-dark;
+}
+
+.services h2 {
+  margin: 0;
+  color: $basic-white;
+}
+
+.services ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.services a {
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $basic-white;
+  text-decoration: none;
+}

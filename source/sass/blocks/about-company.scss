@@ -1,1 +1,24 @@
-//rjv
+.about-company h2 {
+  margin: 0;
+  color: $primary-font;
+}
+
+.about-company p {
+  margin: 0;
+  line-height: 22px;
+  color: $primary-font;
+}
+
+.about-company a {
+  display: inline-block;
+  padding: 15px 50px 12px;
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $additional-color;
+  text-decoration: none;
+  border: 1px solid $additional-color;
+}

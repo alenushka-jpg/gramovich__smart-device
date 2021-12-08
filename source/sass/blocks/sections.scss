@@ -1,1 +1,12 @@
-//комментарий
+.sections ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sections a {
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  color: rgba($additional-dark, 0.5);
+}

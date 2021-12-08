@@ -1,1 +1,14 @@
-//комментарий
+.special-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.special-list a {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba($additional-dark, 0.5);
+}
