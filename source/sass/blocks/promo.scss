@@ -1,9 +1,14 @@
 .promo {
   background-color: $additional-dark;
+  background-image: url("../img/main-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo__container {
-  padding: 194px 0 278px;
+  position: relative;
+  padding: 316px 0 275px;
 }
 
 .promo h1 {
@@ -29,6 +34,8 @@
 }
 
 .promo p {
+  width: 777px;
+  padding-left: 94px;
   margin-top: 0;
   margin-bottom: 37px;
   font-size: 22px;
@@ -60,4 +67,10 @@
 
 .promo span:nth-child(3n-1) {
   display: none;
+}
+
+.promo__picture {
+  position: absolute;
+  right: -80px;
+  top: 15px;
 }
