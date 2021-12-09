@@ -8,7 +8,9 @@
 
 .promo__container {
   position: relative;
+  max-width: 1490px;
   padding: 316px 0 275px;
+  overflow: hidden;
 }
 
 .promo h1 {
@@ -71,6 +73,28 @@
 
 .promo__picture {
   position: absolute;
-  right: -80px;
-  top: 15px;
+  top: 33px;
+  left: 100%;
+  margin-left: -48%;
+  height: 655px;
+  width: 713px;
+  background-image: url("../img/chip.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (max-width: $tablet-width) {
+    width: 330px;
+    height: 466px;
+    background-image: url("../img/chip-tablet.png");
+    top: -72px;
+    right: -2px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 294px;
+    height: 437px;
+    background-image: url("../img/chip-mobile.png");
+    right: 0;
+    top: -55px;
+  }
 }
