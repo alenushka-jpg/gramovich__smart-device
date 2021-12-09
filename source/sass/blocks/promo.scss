@@ -15,6 +15,10 @@
   @media (max-width: $tablet-width) {
     padding: 188px 200px 162px 90px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 286px 18px 70px;
+  }
 }
 
 .promo h1 {
@@ -34,6 +38,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -56,11 +61,13 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 42px;
     font-size: 16px;
   }
 }
 
 .promo a {
+  font-family: "Roboto Condensed", "Courier New", monospace;
   display: inline-block;
   padding: 17px 28px 14px;
   font-weight: 700;
@@ -75,6 +82,16 @@
 
 .promo span:nth-child(3n-1) {
   display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.promo span:nth-child(2n-1) {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .promo__picture {
@@ -103,6 +120,6 @@
     height: 437px;
     background-image: url("../img/chip-mobile.png");
     right: 0;
-    top: -55px;
+    top: 0;
   }
 }
