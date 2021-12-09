@@ -1,12 +1,78 @@
+.about-company {
+  max-width: 1164px;
+  padding: 109px 0 110px 180px;
+  background-image: url("../img/2005.png");
+  background-repeat: no-repeat;
+  background-size: 220px 317px;
+  background-position: 0 110px;
+
+  @media (max-width: $tablet-width) {
+    padding: 59px 25px 83px 210px;
+    background-size: 250px 362px;
+    background-position: 0 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 60px 14px 65px;
+    background-image: none;
+  }
+}
+
 .about-company h2 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 18px;
   color: $primary-font;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .about-company p {
   margin: 0;
   line-height: 22px;
   color: $primary-font;
+
+  &:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(2n-1) {
+    margin-bottom: 43px;
+  }
+
+  &:nth-child(2n-1) span:first-child {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:nth-child(2n-1) {
+      margin-bottom: 46px;
+    }
+
+    &:nth-child(2n-1) span:first-child {
+      display: inline;
+    }
+
+    &:nth-child(2n-1) > span:nth-child(3n-1) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &:first-of-type {
+      margin-bottom: 45px;
+    }
+
+    &:nth-child(2n-1) {
+      margin-bottom: 32px;
+    }
+  }
+
 }
 
 .about-company a {
@@ -21,4 +87,5 @@
   color: $additional-color;
   text-decoration: none;
   border: 1px solid $additional-color;
+  border-radius: 5px;
 }
