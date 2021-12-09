@@ -11,6 +11,10 @@
   max-width: 1490px;
   padding: 316px 0 275px;
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    padding: 188px 200px 162px 90px;
+  }
 }
 
 .promo h1 {
@@ -45,6 +49,8 @@
   color: $basic-white;
 
   @media (max-width: $tablet-width) {
+    width: auto;
+    padding-left: 48px;
     font-size: 18px;
     line-height: 156.8%;
   }
@@ -83,11 +89,13 @@
   background-size: 100%;
 
   @media (max-width: $tablet-width) {
+    left: auto;
+    right: 0;
+    top: 10px;
+    margin-left: 0;
     width: 330px;
     height: 466px;
     background-image: url("../img/chip-tablet.png");
-    top: -72px;
-    right: -2px;
   }
 
   @media (max-width: $mobile-width) {
