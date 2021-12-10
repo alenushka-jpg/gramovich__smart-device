@@ -5,6 +5,11 @@
   padding-bottom: 14px;
   margin: 0;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    // padding-right: 10px;
+  }
 }
 
 .special-list a {
@@ -14,4 +19,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: rgba($additional-dark, 0.5);
+}
+
+.special-list li:first-child,
+.special-list li:nth-child(3n-1) {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
