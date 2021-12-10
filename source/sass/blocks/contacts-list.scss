@@ -1,11 +1,34 @@
 .contacts-list {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .contacts-list a {
+  display: block;
   line-height: 18px;
   color: $basic-white;
   text-decoration: none;
+}
+
+.contacts-list__svg-email {
+  @media (max-width: $tablet-width) {
+    width: 25px;
+    height: 19px;
+  }
+}
+
+.contacts-list__svg-phone {
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.contacts-list span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

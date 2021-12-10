@@ -45,6 +45,47 @@ img {
   height: auto;
 }
 
+button {
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: inherit;
+}
+
+.logo-light {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.container {
+  max-width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

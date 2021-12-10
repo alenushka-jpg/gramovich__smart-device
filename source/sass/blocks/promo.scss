@@ -1,10 +1,29 @@
 .promo {
   background-color: $additional-dark;
+  background-image: url("../img/main-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__container {
+  position: relative;
+  max-width: 1490px;
+  padding: 316px 0 275px;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    padding: 188px 200px 162px 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 286px 18px 70px;
+  }
 }
 
 .promo h1 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 31px;
   font-family: "Roboto Condensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 80px;
@@ -19,30 +38,37 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 47px;
   }
 }
 
 .promo p {
+  width: 777px;
+  padding-left: 94px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 37px;
   font-size: 22px;
   line-height: 34px;
   color: $basic-white;
 
   @media (max-width: $tablet-width) {
+    width: auto;
+    padding-left: 48px;
     font-size: 18px;
     line-height: 156.8%;
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 42px;
     font-size: 16px;
   }
 }
 
 .promo a {
-  display: block;
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  display: inline-block;
   padding: 17px 28px 14px;
   font-weight: 700;
   line-height: 19px;
@@ -52,4 +78,50 @@
   text-transform: uppercase;
   background-color: $additional-color;
   border-radius: 5px;
+}
+
+.promo span:nth-child(3n-1) {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.promo span:nth-child(2n-1) {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.promo__picture {
+  position: absolute;
+  top: 33px;
+  left: 100%;
+  margin-left: -48%;
+  height: 655px;
+  width: 48%;
+  background-image: url("../img/chip.png");
+  background-repeat: no-repeat;
+  background-size: 713px 655px;
+
+  @media (max-width: $tablet-width) {
+    left: auto;
+    right: 0;
+    top: 10px;
+    margin-left: 0;
+    width: 330px;
+    height: 466px;
+    background-image: url("../img/chip-tablet.png");
+    background-size: 330px 466px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 294px;
+    height: 437px;
+    background-image: url("../img/chip-mobile.png");
+    background-size: 294px 437px;
+    right: 0;
+    top: 0;
+  }
 }

@@ -1,5 +1,31 @@
 .page-header {
+  margin-bottom: -122px;
   background-color: $additional-dark;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+.page-header a {
+  display: block;
+}
+
+.page-header__contacts {
+  display: flex;
 }
 
 .page-header button {
@@ -14,4 +40,8 @@
   background-color: inherit;
   border: 1px solid $basic-white;
   border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
