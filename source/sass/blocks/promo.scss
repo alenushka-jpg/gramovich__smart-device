@@ -100,10 +100,10 @@
   left: 100%;
   margin-left: -48%;
   height: 655px;
-  width: 713px;
+  width: 48%;
   background-image: url("../img/chip.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 713px 655px;
 
   @media (max-width: $tablet-width) {
     left: auto;
@@ -113,12 +113,14 @@
     width: 330px;
     height: 466px;
     background-image: url("../img/chip-tablet.png");
+    background-size: 330px 466px;
   }
 
   @media (max-width: $mobile-width) {
     width: 294px;
     height: 437px;
     background-image: url("../img/chip-mobile.png");
+    background-size: 294px 437px;
     right: 0;
     top: 0;
   }
