@@ -275,5 +275,32 @@
           </ul>
         </div>
     </footer>
+    <div class="modal-window">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form action="#" method="post">
+        <div class="modal-window__contacts">
+          <div class="modal-window__input modal-window__input--name">
+            <label class="visually-hidden" for="name">Введите Ваше Имя</label>
+            <input maxlength="50" minlength="1" name="name" type="text" id="name" placeholder="Имя"
+            aria-label="Поле для ввода Вашего имени" required>
+          </div>
+          <div class="modal-window__input modal-window__input--tel">
+            <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+            <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон"
+            aria-label="Поле для ввода Вашего номера телефона" required>
+          </div>
+          <div class="modal-window__input modal-window__input--textarea">
+            <label class="visually-hidden" for="textarea">Ваш вопрос</label>
+            <textarea minlength="1" maxlength="1000" type="textarea" placeholder="Ваш вопрос" required></textarea>
+          </div>
+        </div>
+        <button>Отправить</button>
+        <div class="modal-window__checkbox">
+          <input class="visually-hidden" type="checkbox" id="checkbox" checked>
+          <label for="checkbox">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

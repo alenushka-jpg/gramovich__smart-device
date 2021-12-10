@@ -45,6 +45,17 @@ img {
   height: auto;
 }
 
+button {
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: inherit;
+}
+
 .logo-light {
   @media (max-width: $mobile-width) {
     display: none;
