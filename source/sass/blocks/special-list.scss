@@ -8,7 +8,10 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
-    // padding-right: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
   }
 }
 
@@ -19,6 +22,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: rgba($additional-dark, 0.5);
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .special-list li:first-child,
