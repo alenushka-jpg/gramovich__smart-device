@@ -7,6 +7,14 @@
   max-width: 1490px;
   padding-top: 96px;
   padding-bottom: 114px;
+
+  @media (max-width: $tablet-width) {
+    padding: 83px 87px 103px 92px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 33px 15px 41px;
+  }
 }
 
 .user-data__pucture {
@@ -21,7 +29,7 @@
   background-size: 706px 517px;
 
   @media (max-width: $tablet-width) {
-    background-image: none;
+    display: none;
   }
 }
 
@@ -47,6 +55,10 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-white;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .user-data form {
@@ -56,6 +68,14 @@
   justify-content: space-between;
   column-gap: 29px;
   row-gap: 43px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    row-gap: 30px;
+  }
 }
 
 .user-data__contacts {
@@ -64,6 +84,14 @@
   justify-content: space-between;
   column-gap: 30px;
   row-gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    row-gap: 30px;
+  }
 }
 
 .user-data__input {
@@ -76,6 +104,10 @@
   }
 
   &--textarea {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
@@ -118,10 +150,18 @@
   background-color: inherit;
   border: 1px solid $basic-white;
   border-radius: 5px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .user-data__checkbox {
   width: 47%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .user-data__checkbox label {
