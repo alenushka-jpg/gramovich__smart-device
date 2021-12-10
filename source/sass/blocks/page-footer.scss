@@ -1,3 +1,59 @@
 .page-footer {
   background-color: $secondary-white;
 }
+
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+
+.page-footer__top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.page-footer a {
+  display: block;
+}
+
+.page-footer h3 {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-family: "Roboto Condensed", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $additional-dark;
+}
+
+.page-footer__top span {
+  display: none;
+}
+
+.page-footer__our-office ul,
+.page-footer__sections ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-footer__our-office a,
+.page-footer__sections a {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba($additional-dark, 0.5);
+  text-decoration: none;
+}
+
+.page-footer__sections ul {
+  display: flex;
+  flex-direction: column;
+  width: 435px;
+  height: 100px;
+  flex-wrap: wrap;
+}
