@@ -1,5 +1,18 @@
 .user-data {
+  position: relative;
   background-color: $additional-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 35px;
+    right: 2px;
+    content: "";
+    width: 364px;
+    height: 670px;
+    background-image: url("../img/triangles-userdata.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .user-data__container {
@@ -152,6 +165,9 @@
 }
 
 .user-data__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 47%;
 
   @media (max-width: $mobile-width) {
@@ -160,7 +176,35 @@
 }
 
 .user-data__checkbox label {
+  display: block;
+  padding-left: 33px;
   font-size: 14px;
   line-height: 16px;
   color: rgba($basic-white, 0.8);
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid $basic-white;
+  }
+}
+
+.user-data__checkbox input {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  opacity: 0;
+}
+
+.user-data__checkbox input:checked + label::after {
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
