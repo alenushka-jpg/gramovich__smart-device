@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 436px;
+  width: 424px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -10,10 +10,17 @@
   @media (max-width: $tablet-width) {
     width: 83px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 73px;
+  }
 }
 
 .contacts-list a {
-  display: block;
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 10px;
   line-height: 18px;
   color: $basic-white;
   text-decoration: none;
@@ -34,7 +41,7 @@
 }
 
 .contacts-list span {
-  margin-left: 15px;
+  margin-left: 13px;
 
   @media (max-width: $tablet-width) {
     display: none;

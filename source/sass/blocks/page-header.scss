@@ -1,33 +1,47 @@
 .page-header {
-  margin-bottom: -122px;
-  background-color: $additional-dark;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  @media (max-width: $tablet-width) {
+    left: auto;
+    transform: none;
+    width: 100%;
+  }
 }
 
 .page-header__container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1411px;
   padding-top: 33px;
   padding-bottom: 33px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 27px;
+    padding-top: 20px;
     padding-bottom: 27px;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 17px;
+    padding-top: 14px;
     padding-bottom: 17px;
   }
 }
 
 .page-header a {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .page-header__contacts {
   display: flex;
-  width: 654px;
   justify-content: space-between;
+  align-items: center;
+  width: 654px;
 
   @media (max-width: $tablet-width) {
     width: auto;
@@ -35,7 +49,8 @@
 }
 
 .page-header button {
-  padding: 14px 26px 13px;
+  padding: 14px 13px 15px;
+  width: 180px;
   font-family: "Roboto Condensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 14px;

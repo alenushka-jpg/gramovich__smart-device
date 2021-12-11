@@ -4,27 +4,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .promo__container {
   position: relative;
   max-width: 1490px;
-  padding: 316px 0 275px;
-  overflow: hidden;
+  padding: 316px 33px 275px;
 
   @media (max-width: $tablet-width) {
-    padding: 188px 200px 162px 90px;
+    padding: 188px 200px 163px 88px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 286px 18px 70px;
+    padding: 286px 15px 70px;
   }
 }
 
 .promo h1 {
   position: relative;
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 25px;
   font-family: "Roboto Condensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 80px;
@@ -35,12 +35,13 @@
   z-index: 1;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 29px;
     font-size: 60px;
     line-height: 70px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -49,9 +50,9 @@
 .promo p {
   position: relative;
   width: 50%;
-  padding-left: 94px;
+  padding-left: 99px;
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 42px;
   font-size: 22px;
   line-height: 34px;
   color: $basic-white;
@@ -59,8 +60,8 @@
 
   &::after {
     position: absolute;
-    top: 15px;
-    left: 0;
+    top: 16px;
+    left: 4px;
     content: "";
     width: 66px;
     height: 2px;
@@ -69,7 +70,8 @@
 
   @media (max-width: $tablet-width) {
     width: auto;
-    padding-left: 48px;
+    padding-left: 51px;
+    margin-bottom: 55px;
     font-size: 18px;
     line-height: 156.8%;
 
@@ -79,7 +81,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     font-size: 16px;
   }
 }
@@ -87,8 +89,9 @@
 .promo a {
   display: inline-block;
   max-width: 407px;
+  margin-left: 99px;
+  padding: 17px 45px 20px;
   font-family: "Roboto Condensed", "Courier New", monospace;
-  padding: 17px 45px 14px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.05em;
@@ -100,13 +103,15 @@
 
   @media (max-width: $tablet-width) {
     max-width: 379px;
-    padding: 17px 31px 14px;
+    padding: 17px 31px 19px;
+    margin-left: 51px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-right: 30px;
+    margin-left: 0;
   }
 }
 
@@ -126,9 +131,9 @@
 
 .promo__picture {
   position: absolute;
-  top: 33px;
+  top: 116px;
   left: 100%;
-  margin-left: -48%;
+  margin-left: -45%;
   height: 655px;
   width: 48%;
   background-image: url("../img/chip.png");
@@ -139,7 +144,7 @@
   @media (max-width: $tablet-width) {
     left: auto;
     right: 0;
-    top: 10px;
+    top: 0;
     margin-left: 0;
     width: 330px;
     height: 466px;
