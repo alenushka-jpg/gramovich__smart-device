@@ -72,6 +72,10 @@
     padding-left: 48px;
     font-size: 18px;
     line-height: 156.8%;
+
+    &::after {
+      width: 33px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -84,7 +88,7 @@
   display: inline-block;
   max-width: 407px;
   font-family: "Roboto Condensed", "Courier New", monospace;
-  padding: 17px 28px 14px;
+  padding: 17px 45px 14px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.05em;
@@ -93,6 +97,17 @@
   text-transform: uppercase;
   background-color: $additional-color;
   border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 379px;
+    padding: 17px 31px 14px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .promo span:nth-child(3n-1) {

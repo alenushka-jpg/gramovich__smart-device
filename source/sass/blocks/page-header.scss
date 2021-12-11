@@ -28,6 +28,10 @@
   display: flex;
   width: 654px;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .page-header button {
