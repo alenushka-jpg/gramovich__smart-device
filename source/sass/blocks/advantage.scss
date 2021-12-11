@@ -1,4 +1,19 @@
 .advantage {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 1260px;
+    background-image: url("../img/triangles.png");
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+.advantage__container {
   padding-top: 112px;
 
   @media (max-width: $tablet-width) {
