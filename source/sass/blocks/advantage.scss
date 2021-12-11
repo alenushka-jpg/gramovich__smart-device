@@ -23,6 +23,10 @@
       background-image: url("../img/triangles-advantage-tablet.png");
     }
   }
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+  }
 }
 
 .advantage__container {
@@ -34,6 +38,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 37px;
+    padding-left: 14px;
   }
 }
 
@@ -50,6 +55,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    row-gap: 20px;
   }
 }
 
@@ -68,12 +74,18 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    min-height: 310px;
+    padding-right: 12px;
   }
 }
 
 .advantage li:nth-child(3n-1) h3 {
   @media (max-width: $tablet-width) {
     padding-top: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 2px;
   }
 }
 
@@ -82,12 +94,39 @@
     padding-top: 7px;
     margin-bottom: 16px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 10px;
+    margin-bottom: 17px;
+  }
 }
 
 .advantage li:nth-child(5n-1) h3 {
   @media (max-width: $tablet-width) {
     padding-top: 4px;
     margin-bottom: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.advantage li:nth-child(3n-1) {
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+  }
+}
+
+.advantage li:nth-child(4n-1) {
+  @media (max-width: $mobile-width) {
+    min-height: 232px;
+  }
+}
+
+.advantage li:nth-child(5n-1) {
+  @media (max-width: $mobile-width) {
+    min-height: 244px;
   }
 }
 
@@ -107,6 +146,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 10px;
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 140.62%;
   }
