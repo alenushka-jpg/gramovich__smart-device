@@ -4,8 +4,8 @@
 
 .services__container {
   max-width: 1170px;
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 89px;
+  padding-bottom: 128px;
 
   @media (max-width: $tablet-width) {
     padding-top: 53px;
@@ -19,7 +19,7 @@
 
 .services h2 {
   margin-top: 0;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
   color: $basic-white;
 
   @media (max-width: $mobile-width) {
@@ -54,12 +54,26 @@
   line-height: 30px;
   color: $basic-white;
   text-decoration: none;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 64px;
+    height: 63px;
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 28px 26px;
+    background-color: $additional-color;
+  }
 }
 
 .services span {
   position: absolute;
   top: 53px;
   left: 44px;
+  width: 165px;
 
   @media (max-width: $tablet-width) {
     top: 53px;

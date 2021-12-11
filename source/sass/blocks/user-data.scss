@@ -5,8 +5,8 @@
 .user-data__container {
   position: relative;
   max-width: 1490px;
-  padding-top: 96px;
-  padding-bottom: 114px;
+  padding-top: 93px;
+  padding-bottom: 109px;
 
   @media (max-width: $tablet-width) {
     padding: 83px 87px 103px 92px;
@@ -19,11 +19,11 @@
 
 .user-data__pucture {
   position: absolute;
-  top: 33px;
+  top: 83px;
   right: 100%;
   width: 706px;
   height: 517px;
-  margin-right: -48%;
+  margin-right: -44%;
   background-image: url("../img/airplane.png");
   background-repeat: no-repeat;
   background-size: 706px 517px;
@@ -34,7 +34,7 @@
 }
 
 .user-data__content {
-  width: 49%;
+  width: 49.4%;
   margin-left: auto;
 
   @media (max-width: $tablet-width) {
@@ -44,13 +44,14 @@
 
 .user-data h2 {
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 7px;
   color: $basic-white;
 }
 
 .user-data p {
+  padding-left: 5px;
   margin-top: 0;
-  margin-bottom: 44px;
+  margin-bottom: 52px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -62,12 +63,13 @@
 }
 
 .user-data form {
-  max-width: 570px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 29px;
   row-gap: 43px;
+  max-width: 575px;
+  padding-left: 5px;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
@@ -138,8 +140,9 @@
 }
 
 .user-data button {
+  height: 45px;
   width: 47%;
-  padding: 14px;
+  padding: 6px 14px 10px;
   border: 1px solid $basic-white;
   border-radius: 5px;
 
