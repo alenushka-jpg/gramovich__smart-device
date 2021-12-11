@@ -25,12 +25,14 @@
     align-items: center;
     padding: 19px 25px 26px;
     margin-bottom: 38px;
+    border-bottom: 1px solid rgba($grey, 0.2);
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     padding: 46px 25px 54px;
     margin-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -78,37 +80,30 @@
   }
 }
 
-.page-footer__sections {
+.page-footer__list-navigation {
   @media (max-width: $tablet-width) {
     padding-left: 25px;
   }
-
-  @media (max-width: $mobile-width) {
-    padding: 29px 15px 28px;
-    width: 100%;
-  }
 }
 
-.page-footer__our-office {
+.page-footer__list-contacts {
   @media (max-width: $tablet-width) {
     padding-right: 37px;
   }
+}
+
+.page-footer__list-navigation,
+.page-footer__list-contacts {
+  position: relative;
 
   @media (max-width: $mobile-width) {
     padding: 29px 15px 28px;
     width: 100%;
+    border-top: 1px solid rgba($grey, 0.2);
   }
 }
 
-.page-footer__our-office a,
-.page-footer__sections a {
-  font-size: 15px;
-  line-height: 25px;
-  color: rgba($additional-dark, 0.5);
-  text-decoration: none;
-}
-
-.page-footer__sections ul {
+.page-footer__list-navigation ul {
   display: flex;
   flex-direction: column;
   width: 435px;
@@ -121,8 +116,8 @@
   }
 }
 
-.page-footer__our-office ul,
-.page-footer__sections ul {
+.page-footer__list-navigation ul,
+.page-footer__list-contacts  ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -132,7 +127,7 @@
   }
 }
 
-.page-footer__sections--open {
+.page-footer__list-navigation--open {
   @media (max-width: $mobile-width) {
     ul {
       display: flex;
@@ -144,7 +139,7 @@
   }
 }
 
-.page-footer__our-office--open {
+.page-footer__list-contacts--open {
   @media (max-width: $mobile-width) {
     ul {
       display: block;
@@ -153,6 +148,51 @@
 
     h3 {
       margin-bottom: 37px;
+    }
+  }
+}
+
+.page-footer__bottom {
+  border-top: 1px solid rgba($grey, 0.2);
+}
+
+.page-footer__list-navigation a,
+.page-footer__list-contacts a {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba($additional-dark, 0.5);
+  text-decoration: none;
+}
+
+.page-footer__list-navigation button,
+.page-footer__list-contacts button {
+  padding: 0;
+  display: none;
+  border: none;
+  background-color: inherit;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    top: 29px;
+    right: 17px;
+  }
+}
+
+.page-footer__svg-minus {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.page-footer__list-contacts--open {
+  @media (max-width: $mobile-width) {
+    .page-footer__svg-minus {
+      display: block;
+    }
+
+    .page-footer__svg-plus {
+      display: none;
     }
   }
 }
