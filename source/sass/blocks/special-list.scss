@@ -1,8 +1,6 @@
 .special-list {
   display: flex;
-  justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 0 15px;
   margin: 0;
   list-style: none;
 
@@ -12,6 +10,30 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+  }
+}
+
+.special-list li:nth-child(2n-1) {
+  margin-right: 70px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.special-list li:nth-child(3n-1) {
+  margin-right: 143px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.special-list li:last-child {
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
