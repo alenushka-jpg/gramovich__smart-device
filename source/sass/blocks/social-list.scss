@@ -7,4 +7,8 @@
   margin-top: 0;
   margin-bottom: 13px;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

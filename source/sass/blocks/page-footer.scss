@@ -12,6 +12,7 @@
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
     padding: 0;
+    padding-bottom: 36px;
   }
 }
 
@@ -74,6 +75,8 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+    padding-left: 29px;
+    padding-top: 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -92,6 +95,7 @@
 
   @media (max-width: $tablet-width) {
     padding-right: 37px;
+    width: 370px;
   }
 }
 
