@@ -22,6 +22,7 @@
 }
 
 .promo h1 {
+  position: relative;
   margin-top: 0;
   margin-bottom: 31px;
   font-family: "Roboto Condensed", "Courier New", monospace;
@@ -31,6 +32,7 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $basic-white;
+  z-index: 1;
 
   @media (max-width: $tablet-width) {
     font-size: 60px;
@@ -45,13 +47,25 @@
 }
 
 .promo p {
-  width: 777px;
+  position: relative;
+  width: 50%;
   padding-left: 94px;
   margin-top: 0;
   margin-bottom: 37px;
   font-size: 22px;
   line-height: 34px;
   color: $basic-white;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: $basic-white;
+  }
 
   @media (max-width: $tablet-width) {
     width: auto;
@@ -67,8 +81,9 @@
 }
 
 .promo a {
-  font-family: "Roboto Condensed", "Courier New", monospace;
   display: inline-block;
+  max-width: 407px;
+  font-family: "Roboto Condensed", "Courier New", monospace;
   padding: 17px 28px 14px;
   font-weight: 700;
   line-height: 19px;
@@ -104,6 +119,7 @@
   background-image: url("../img/chip.png");
   background-repeat: no-repeat;
   background-size: 713px 655px;
+  z-index: 0;
 
   @media (max-width: $tablet-width) {
     left: auto;

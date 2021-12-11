@@ -1,6 +1,8 @@
 .contacts-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 436px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -28,6 +30,8 @@
 }
 
 .contacts-list span {
+  margin-left: 15px;
+
   @media (max-width: $tablet-width) {
     display: none;
   }
