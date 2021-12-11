@@ -7,9 +7,9 @@
   background-position: -34px 110px;
 
   @media (max-width: $tablet-width) {
-    padding: 59px 25px 83px 210px;
+    padding: 55px 25px 84px 210px;
     background-size: 250px 362px;
-    background-position: 0 70px;
+    background-position: -8px 53px;
   }
 
   @media (max-width: $mobile-width) {
@@ -24,7 +24,7 @@
   color: $primary-font;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   @media (max-width: $mobile-width) {
@@ -50,8 +50,10 @@
   }
 
   @media (max-width: $tablet-width) {
+    padding-left: 2px;
+
     &:nth-child(2n-1) {
-      margin-bottom: 46px;
+      margin-bottom: 39px;
     }
 
     &:nth-child(2n-1) span:first-child {

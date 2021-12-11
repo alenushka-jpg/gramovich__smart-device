@@ -1,5 +1,6 @@
 .advantage {
   position: relative;
+  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -7,9 +8,20 @@
     content: "";
     width: 100%;
     height: 1260px;
-    background-image: url("../img/triangles.png");
+    background-image: url("../img/triangles-advantage.png");
+    background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+  }
+
+  @media (max-width: $tablet-width) {
+    &::before {
+      top: 207px;
+      right: -38px;
+      width: 636px;
+      height: 640px;
+      background-image: url("../img/triangles-advantage-tablet.png");
+    }
   }
 }
 
@@ -17,7 +29,7 @@
   padding-top: 112px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 56px;
+    padding-top: 54px;
   }
 
   @media (max-width: $mobile-width) {
@@ -51,11 +63,31 @@
 
   @media (max-width: $tablet-width) {
     min-height: 232px;
-    padding: 24px 25px 21px 25px;
+    padding: 24px 18px 21px 25px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
+  }
+}
+
+.advantage li:nth-child(3n-1) h3 {
+  @media (max-width: $tablet-width) {
+    padding-top: 7px;
+  }
+}
+
+.advantage li:nth-child(4n-1) h3 {
+  @media (max-width: $tablet-width) {
+    padding-top: 7px;
+    margin-bottom: 16px;
+  }
+}
+
+.advantage li:nth-child(5n-1) h3 {
+  @media (max-width: $tablet-width) {
+    padding-top: 4px;
+    margin-bottom: 4px;
   }
 }
 
@@ -70,7 +102,8 @@
   color: $additional-color;
 
   @media (max-width: $tablet-width) {
-    padding-top: 13px;
+    padding-top: 4px;
+    margin-bottom: 7px;
   }
 
   @media (max-width: $mobile-width) {
@@ -89,4 +122,18 @@
 
 .advantage svg {
   fill: $additional-color;
+}
+
+.advantage__hired-svg {
+  @media (max-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.advantage__detective-svg {
+  @media (max-width: $tablet-width) {
+    width: 30px;
+    height: 26px;
+  }
 }

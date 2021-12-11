@@ -8,7 +8,7 @@
   padding-bottom: 128px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 50px;
     padding-bottom: 78px;
   }
 
@@ -21,6 +21,10 @@
   margin-top: 0;
   margin-bottom: 50px;
   color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 90px;
+  }
 
   @media (max-width: $mobile-width) {
     padding-left: 10px;
@@ -42,6 +46,12 @@
 
   @media (max-width: $mobile-width) {
     row-gap: 30px;
+  }
+}
+
+.services li:first-child {
+  @media (max-width: $tablet-width) {
+    padding-right: 4px;
   }
 }
 
@@ -76,7 +86,7 @@
   width: 165px;
 
   @media (max-width: $tablet-width) {
-    top: 53px;
+    top: 40px;
     left: 45px;
   }
 
@@ -85,6 +95,13 @@
     left: 35px;
   }
 }
+
+.services li:nth-of-type(4n-1) span {
+  @media (max-width: $tablet-width) {
+    top: 50px;
+  }
+}
+
 
 .services img {
   opacity: 0.2;
