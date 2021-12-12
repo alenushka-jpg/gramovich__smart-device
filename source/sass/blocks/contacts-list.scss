@@ -24,6 +24,10 @@
   line-height: 18px;
   color: $basic-white;
   text-decoration: none;
+
+  &:hover {
+    color: rgba($basic-white, 0.8);
+  }
 }
 
 .contacts-list__svg-email {

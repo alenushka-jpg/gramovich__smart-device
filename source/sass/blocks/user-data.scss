@@ -189,6 +189,10 @@
   border: 1px solid $basic-white;
   border-radius: 5px;
 
+  &:hover {
+    background-color: rgba($basic-white, 0.5);
+  }
+
   @media (max-width: $tablet-width) {
     height: 47px;
     width: 47.5%;
@@ -262,6 +266,12 @@
   @media (max-width: $mobile-width) {
     top: 5px;
     left: 0;
+  }
+}
+
+.user-data__checkbox:hover {
+  label {
+    color: rgba($basic-white, 0.5);
   }
 }
 
