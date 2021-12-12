@@ -101,6 +101,10 @@
   background-color: $additional-color;
   border-radius: 5px;
 
+  &:hover {
+    background-color: rgba($additional-color, 0.5);
+  }
+
   @media (max-width: $tablet-width) {
     max-width: 379px;
     padding: 17px 31px 19px;

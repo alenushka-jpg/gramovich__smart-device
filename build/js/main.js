@@ -23,4 +23,13 @@
 
   openModal.addEventListener('click', onOpenClick);
   closeModal.addEventListener('click', onCloseClick);
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalWindow.classList.contains('modal-window--show')) {
+        evt.preventDefault();
+        modalWindow.classList.remove('modal-window--show');
+      }
+    }
+  });
 })();
