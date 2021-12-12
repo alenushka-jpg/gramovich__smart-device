@@ -134,6 +134,24 @@
   }
 }
 
+.advantage li:hover {
+  background-color: $additional-color;
+
+  h3,
+  p {
+    color: $basic-white;
+  }
+
+  svg {
+    fill: $basic-white;
+  }
+}
+
+.advantage li:active,
+.advantage li:focus {
+  border: 1px solid $basic-black;
+}
+
 .advantage h3 {
   padding-top: 17px;
   margin-top: 0;

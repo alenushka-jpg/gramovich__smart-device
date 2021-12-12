@@ -90,4 +90,8 @@
   text-decoration: none;
   border: 1px solid $additional-color;
   border-radius: 5px;
+
+  &:hover {
+    background-color: rgba($additional-color, 0.3);
+  }
 }

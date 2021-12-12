@@ -270,3 +270,7 @@
   background-repeat: no-repeat;
   background-position: 50%;
 }
+
+.user-data__checkbox input:focus + label::after {
+  border: 1px solid $basic-black;
+}

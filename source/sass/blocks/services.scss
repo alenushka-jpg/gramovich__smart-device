@@ -83,6 +83,20 @@
     background-repeat: no-repeat;
     background-position: 28px 26px;
     background-color: $additional-color;
+    z-index: 5;
+  }
+
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+  }
+
+  &:active,
+  &:focus {
+    img {
+      opacity: 1;
+    }
   }
 }
 
