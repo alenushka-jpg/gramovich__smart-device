@@ -32,7 +32,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 33px 15px 41px;
+    padding: 31px 15px 41px;
   }
 }
 
@@ -69,6 +69,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 17px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .user-data p {
@@ -81,7 +85,8 @@
   color: $basic-white;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 29px;
+    padding-left: 0;
+    margin-bottom: 25px;
   }
 }
 
@@ -100,7 +105,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    row-gap: 30px;
+    row-gap: 26px;
+    padding-left: 0;
   }
 }
 
@@ -136,7 +142,6 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-
   }
 }
 
@@ -159,7 +164,7 @@
   width: 100%;
 
   @media (max-width: $tablet-width) {
-    padding: 15px 16px;
+    padding: 14px 16px 16px;
     width: 100%;
   }
 }
@@ -171,6 +176,10 @@
 
   @media (max-width: $tablet-width) {
     height: 160px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 105px;
   }
 }
 
@@ -226,6 +235,16 @@
       top: 10px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 33px;
+    padding-top: 5px;
+
+    &::after {
+      top: 5px;
+      left: 0px;
+    }
+  }
 }
 
 .user-data__checkbox input {
@@ -239,6 +258,11 @@
 
   @media (max-width: $tablet-width) {
     top: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 5px;
+    left: 0px;
   }
 }
 

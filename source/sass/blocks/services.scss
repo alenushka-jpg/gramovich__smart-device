@@ -14,6 +14,7 @@
 
   @media (max-width: $mobile-width) {
     padding-bottom: 64px;
+    padding-right: 15px;
   }
 }
 
@@ -28,6 +29,8 @@
 
   @media (max-width: $mobile-width) {
     padding-left: 10px;
+    padding-right: 0;
+    margin-bottom: 41px;
   }
 }
 
@@ -52,6 +55,10 @@
 .services li:first-child {
   @media (max-width: $tablet-width) {
     padding-right: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
   }
 }
 
@@ -99,6 +106,10 @@
 .services li:nth-of-type(4n-1) span {
   @media (max-width: $tablet-width) {
     top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 30px;
   }
 }
 
