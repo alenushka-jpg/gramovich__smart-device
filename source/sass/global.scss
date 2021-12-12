@@ -57,6 +57,14 @@ button {
   background-color: inherit;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($basic-black, 0.6);
+  z-index: -1;
+}
+
 .logo-light {
   @media (max-width: $mobile-width) {
     display: none;

@@ -37,7 +37,7 @@
               </a>
             </li>
           </ul>
-          <button>Заказать звонок</button>
+          <button class="button-open">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -271,48 +271,57 @@
         <div class="container">
           <ul class="special-list">
             <li>
-              <a href="">
+              <a href="#">
                 <span>Все права защищены</span>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <span>1999-2018 SD Service Devices</span>
               </a>
             </li>
             <li>
-              <a href="">Условия конфиденциальности</a>
+              <a href="#">Условия конфиденциальности</a>
             </li>
             <li>
-              <a href="">Developed by wow studio </a>
+              <a href="#">Developed by wow studio </a>
             </li>
           </ul>
         </div>
     </div></footer>
     <div class="modal-window">
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form action="#" method="post">
-        <div class="modal-window__contacts">
-          <div class="modal-window__input modal-window__input--name">
-            <label class="visually-hidden" for="name">Введите Ваше Имя</label>
-            <input maxlength="50" minlength="1" name="name" type="text" id="name" placeholder="Имя" aria-label="Поле для ввода Вашего имени" required="">
+      <div class="overlay"></div>
+      <div class="modal-window__form-popup">
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <button class="button-close">
+          <svg width="16" height="16">
+            <use xlink:href="./img/sprite_auto.svg#close"></use>
+          </svg>
+        </button>
+        <form action="#" method="post">
+          <div class="modal-window__contacts">
+            <div class="modal-window__input modal-window__input--name">
+              <label class="visually-hidden" for="name">Введите Ваше Имя</label>
+              <input maxlength="50" minlength="1" name="name" type="text" id="name" placeholder="Имя" aria-label="Поле для ввода Вашего имени" required="">
+            </div>
+            <div class="modal-window__input modal-window__input--tel">
+              <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+              <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
+            </div>
+            <div class="modal-window__input modal-window__input--textarea">
+              <label class="visually-hidden" for="textarea">Ваш вопрос</label>
+              <textarea minlength="1" maxlength="1000" type="textarea" placeholder="Ваш вопрос" required=""></textarea>
+            </div>
           </div>
-          <div class="modal-window__input modal-window__input--tel">
-            <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-            <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
+          <button>Отправить</button>
+          <div class="modal-window__checkbox">
+            <input class="visually-hidden" type="checkbox" id="checkbox" checked="">
+            <label for="checkbox">Я согласен на обработку персональных данных</label>
           </div>
-          <div class="modal-window__input modal-window__input--textarea">
-            <label class="visually-hidden" for="textarea">Ваш вопрос</label>
-            <textarea minlength="1" maxlength="1000" type="textarea" placeholder="Ваш вопрос" required=""></textarea>
-          </div>
-        </div>
-        <button>Отправить</button>
-        <div class="modal-window__checkbox">
-          <input class="visually-hidden" type="checkbox" id="checkbox" checked="">
-          <label for="checkbox">Я согласен на обработку персональных данных</label>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
