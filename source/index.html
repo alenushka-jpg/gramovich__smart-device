@@ -188,12 +188,12 @@
               <use xlink:href="./img/sprite_auto.svg#close"></use>
             </svg>
           </button>
-          <form action="#" method="post" id="form-popup">
+          <form action="#" method="submit" id="form-popup">
             <div class="modal-window__contacts">
               <div class="modal-window__input modal-window__input--name">
                 <label class="visually-hidden" for="name-input">Введите Ваше Имя</label>
                 <input maxlength="50" minlength="1" name="username" type="text" id="name-input" placeholder="Имя"
-                aria-label="Поле для ввода Вашего имени" required>
+                aria-label="Поле для ввода Вашего имени" required autofocus>
               </div>
               <div class="modal-window__input modal-window__input--tel">
                 <label class="visually-hidden" for="tel-input">Введите Ваш номер телефона</label>
@@ -252,7 +252,7 @@
         </div>
         <div class="page-footer__list-navigation">
           <h3>Разделы сайта</h3>
-          <button type="button">
+          <button class="js-button" type="button">
             <svg class="page-footer__svg-plus" width="16" height="16">
               <use xlink:href="./img/sprite_auto.svg#plus"></use>
             </svg>
@@ -284,7 +284,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__list-contacts page-footer__list-contacts--open">
+        <div class="page-footer__list-contacts">
           <h3>Наш офис</h3>
           <button type="button">
             <svg class="page-footer__svg-plus" width="16" height="16">
@@ -331,7 +331,7 @@
             </li>
           </ul>
         </div>
-      </div>>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>

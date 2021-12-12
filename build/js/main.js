@@ -4,6 +4,7 @@
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
   var modalWindow = document.querySelector('.modal-window');
+  var username = modalWindow.querySelector('[name=username]');
 
   function showWindow() {
     modalWindow.classList.add('modal-window--show');
@@ -15,6 +16,7 @@
 
   function onOpenClick() {
     showWindow();
+    username.focus();
   }
 
   function onCloseClick() {
@@ -34,7 +36,6 @@
   });
 
   // local storage
-  var username = modalWindow.querySelector('[name=username]');
   var phone = modalWindow.querySelector('[name=phone]');
   var form = modalWindow.querySelector('#form-popup');
 
