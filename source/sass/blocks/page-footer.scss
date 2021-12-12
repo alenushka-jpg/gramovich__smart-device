@@ -36,7 +36,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    padding: 46px 32px 54px 25px ;
+    padding: 46px 32px 54px 25px;
     margin-bottom: 0;
     border-bottom: none;
   }
@@ -131,7 +131,7 @@
 }
 
 .page-footer__list-navigation ul,
-.page-footer__list-contacts  ul {
+.page-footer__list-contacts ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -162,6 +162,14 @@
 
     h3 {
       margin-bottom: 31px;
+    }
+
+    .page-footer__svg-minus {
+      display: block;
+    }
+
+    .page-footer__svg-plus {
+      display: none;
     }
   }
 }
@@ -196,17 +204,5 @@
 .page-footer__svg-minus {
   @media (max-width: $mobile-width) {
     display: none;
-  }
-}
-
-.page-footer__list-contacts--open {
-  @media (max-width: $mobile-width) {
-    .page-footer__svg-minus {
-      display: block;
-    }
-
-    .page-footer__svg-plus {
-      display: none;
-    }
   }
 }

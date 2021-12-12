@@ -15,11 +15,11 @@
   }
 
   function onOpenClick() {
-    showWindow()
+    showWindow();
   }
 
   function onCloseClick() {
-    hideModal()
+    hideModal();
   }
 
   openModal.addEventListener('click', onOpenClick);

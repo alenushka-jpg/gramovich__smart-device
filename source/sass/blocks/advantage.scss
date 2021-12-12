@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    &::before  {
+    &::before {
       top: inherit;
       bottom: 387px;
       right: -157px;
