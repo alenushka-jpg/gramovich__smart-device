@@ -32,4 +32,18 @@
       }
     }
   });
+
+  // local storage
+  var username = modalWindow.querySelector('[name=username]');
+  var phone = modalWindow.querySelector('[name=phone]');
+  var form = modalWindow.querySelector('#form-popup');
+
+  form.addEventListener('submit', function (evt) {
+    if (!username.value || !phone.value) {
+      evt.preventDefault();
+    } else {
+      localStorage.setItem('username', username.value);
+      localStorage.setItem('phone', phone.value);
+    }
+  });
 })();
