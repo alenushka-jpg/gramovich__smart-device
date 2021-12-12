@@ -13,19 +13,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    position: relative;
-    padding: 60px 14px 65px;
+    padding: 58px 14px 65px;
     background-image: none;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 207px;
-      right: -38px;
-      width: 636px;
-      height: 640px;
-      background-image: url("../img/triangles-advantage-tablet.png");
-    }
   }
 }
 
@@ -47,6 +36,7 @@
   margin: 0;
   line-height: 22px;
   color: $primary-font;
+  white-space: normal;
 
   &:first-of-type {
     margin-bottom: 22px;
@@ -78,11 +68,11 @@
 
   @media (max-width: $mobile-width) {
     &:first-of-type {
-      margin-bottom: 45px;
+      margin-bottom: 40px;
     }
 
     &:nth-child(2n-1) {
-      margin-bottom: 32px;
+      margin-bottom: 29px;
     }
   }
 }

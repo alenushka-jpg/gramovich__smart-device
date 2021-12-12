@@ -25,7 +25,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image: none;
+    &::before  {
+      top: inherit;
+      bottom: 387px;
+      right: -157px;
+    }
   }
 }
 
