@@ -1,9 +1,8 @@
 'use strict';
-
 (function () {
 // Открытие модального окна по кнопке Заказать звонок
-  var openModal = document.querySelector('.button-open');
-  var closeModal = document.querySelector('.button-close');
+  var openModal = document.querySelector('.page-header__button');
+  var closeModal = document.querySelector('.modal-window__button-close');
   var modalWindow = document.querySelector('.modal-window');
 
   function showWindow() {
@@ -15,13 +14,13 @@
   }
 
   function onOpenClick() {
-    showWindow()
+    showWindow();
   }
 
   function onCloseClick() {
-    hideModal()
+    hideModal();
   }
 
   openModal.addEventListener('click', onOpenClick);
-  // closeModal.addEventListener('click', onCloseClick);
+  closeModal.addEventListener('click', onCloseClick);
 })();
