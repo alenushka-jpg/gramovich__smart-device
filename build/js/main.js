@@ -7,6 +7,7 @@
   var modalWindow = document.querySelector('.modal-window');
   var formPopup = modalWindow.querySelector('#form-popup');
   var username = document.querySelector('[name=username]');
+  var name = document.querySelector('[name=username]');
   var phone = document.querySelector('[name=phone]');
   var listNavigation = document.querySelector('.page-footer__list-navigation');
   var listContacts = document.querySelector('.page-footer__list-contacts');
@@ -23,7 +24,7 @@
 
   function onOpenClick() {
     showWindow();
-    username.focus();
+    name.focus();
   }
 
   function onCloseClick() {
@@ -53,10 +54,10 @@
   });
 
   userForm.addEventListener('submit', function (evt) {
-    if (!username.value || !phone.value) {
+    if (!name.value || !phone.value) {
       evt.preventDefault();
     } else {
-      localStorage.setItem('username', username.value);
+      localStorage.setItem('name', name.value);
       localStorage.setItem('phone', phone.value);
     }
   });
