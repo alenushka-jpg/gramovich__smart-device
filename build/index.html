@@ -176,7 +176,7 @@
           <div class="user-data__content">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form action="#" method="post" id="form">
+            <form action="#" method="post" id="form-user">
               <div class="user-data__contacts">
                 <div class="user-data__input user-data__input--name">
                   <label class="visually-hidden" for="name">Введите Ваше Имя</label>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="user-data__input user-data__input--tel">
                   <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-                  <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
+                  <input maxlength="16" minlength="16" name="phone" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
                 </div>
                 <div class="user-data__input user-data__input--textarea">
                   <label>
@@ -221,7 +221,7 @@
               </div>
               <div class="modal-window__input modal-window__input--tel">
                 <label class="visually-hidden" for="tel-input">Введите Ваш номер телефона</label>
-                <input maxlength="11" minlength="11" name="phone" type="tel" id="tel-input" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
+                <input maxlength="16" minlength="16" name="phone" type="tel" id="tel-input" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
               </div>
               <div class="modal-window__input modal-window__input--textarea">
                 <label>
@@ -358,6 +358,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
