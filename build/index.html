@@ -12,7 +12,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__container container">
-        <a href="#">
+        <a>
           <svg class="logo-light" width="202" height="52">
             <use xlink:href="./img/sprite_auto.svg#logo-light"></use>
           </svg>
@@ -114,9 +114,18 @@
               <a href="#">
                 <span>Производство печатных плат</span>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/production-mobile.jpg">
-                  <source media="(max-width: 1023px)" srcset="./img/production-tablet.jpg">
-                  <img src="./img/production.jpg" width="370" height="620" loading="lazy" alt="Печать плат">
+                  <!-- 370x620 без ретины; 740х1240 c ретиной -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/production-mobile.webp 1x, ./img/production-mobile@2x.webp 2x">
+                  <!-- 290x256  без ретины; 580x512 c ретиной  -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/production-tablet.webp 1x, ./img/production-tablet@2x.webp 2x">
+                  <!-- 720x256 без ретины; 1440x512 c ретиной  -->
+                  <source type="image/webp" srcset="./img/production.webp 1x, ./img/production@2x.webp 2x">
+                  <!-- 290x256  без ретины; 580x512 c ретиной  -->
+                  <source media="(max-width: 767px)" srcset="./img/production-mobile.jpg 1x, ./img/production-mobile.jpg 2x">
+                  <!-- 720x256 без ретины; 1440x512 c ретиной  -->
+                  <source media="(max-width: 1023px)" srcset="./img/production-tablet.jpg 1x, ./img/production-tablet.jpg 2x">
+                  <!-- 370x620 без ретины; 740х1240 c ретиной -->
+                  <img src="./img/production.jpg" srcset="./img/production.jpg 2x" width="370" height="620" loading="lazy" alt="Печать плат">
                 </picture>
               </a>
             </li>
@@ -124,9 +133,18 @@
               <a href="#">
                 <span>Монтаж печатных плат</span>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/mounting-mobile.jpg">
-                  <source media="(max-width: 1023px)" srcset="./img/mounting-tablet.jpg">
-                  <img src="./img/mounting.jpg" width="370" height="620" loading="lazy" alt="Монтаж плат">
+                  <!-- 370x620 без ретины; 740х1240 c ретиной -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/mounting-mobile.webp 1x, ./img/mounting-mobile@2x.webp 2x">
+                  <!-- 290x256  без ретины; 580x512 c ретиной  -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/mounting-tablet.webp 1x, ./img/mounting-tablet@2x.webp 2x">
+                  <!-- 720x256 без ретины; 1440x512 c ретиной  -->
+                  <source type="image/webp" srcset="./img/mounting.webp 1x, ./img/mounting@2x.webp 2x">
+                  <!-- 290x256  без ретины; 580x512 c ретиной  -->
+                  <source media="(max-width: 767px)" srcset="./img/mounting-mobile.jpg 1x, ./img/production-mobile.jpg 2x">
+                  <!-- 720x256 без ретины; 1440x512 c ретиной  -->
+                  <source media="(max-width: 1023px)" srcset="./img/mounting-tablet.jpg 1x, ./img/mounting-tablet.jpg 2x">
+                  <!-- 370x620 без ретины; 740х1240 c ретиной -->
+                  <img src="./img/mounting.jpg" srcset="./img/mounting.jpg 2x" width="370" height="620" loading="lazy" alt="Монтаж плат">
                 </picture>
               </a>
             </li>
@@ -134,9 +152,18 @@
               <a href="#">
                 <span>Комплектующие для светотехники</span>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/lighting-kits-mobile.jpg">
-                  <source media="(max-width: 1023px)" srcset="./img/lighting-kits-tablet.jpg">
-                  <img src="./img/lighting-kits.jpg" width="370" height="620" loading="lazy" alt="Комплектующие для светотехники">
+                  <!-- 370x620 без ретины; 740х1240 c ретиной -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/lighting-kits-mobile.webp 1x, ./img/lighting-kits-mobile@2x.webp 2x">
+                  <!-- 290x256  без ретины; 580x512 c ретиной  -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/lighting-kits-tablet.webp 1x, ./img/lighting-kits-tablet@2x.webp 2x">
+                  <!-- 720x256 без ретины; 1440x512 c ретиной  -->
+                  <source type="image/webp" srcset="./img/lighting-kits.webp 1x, ./img/lighting-kits@2x.webp 2x">
+                  <!-- 290x256  без ретины; 580x512 c ретиной  -->
+                  <source media="(max-width: 767px)" srcset="./img/lighting-kits-mobile.jpg 1x, ./img/lighting-kits-mobile.jpg 2x">
+                  <!-- 720x256 без ретины; 1440x512 c ретиной  -->
+                  <source media="(max-width: 1023px)" srcset="./img/lighting-kits-tablet.jpg 1x, ./img/lighting-kits-tablet.jpg 2x">
+                  <!-- 370x620 без ретины; 740х1240 c ретиной -->
+                  <img src="./img/lighting-kits.jpg" srcset="./img/lighting-kits.jpg 2x" width="370" height="620" loading="lazy" alt="Монтаж плат">
                 </picture>
               </a>
             </li>
@@ -149,7 +176,7 @@
           <div class="user-data__content">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <form action="#" method="post" id="form-popup">
+            <form action="#" method="post" id="form">
               <div class="user-data__contacts">
                 <div class="user-data__input user-data__input--name">
                   <label class="visually-hidden" for="name">Введите Ваше Имя</label>
@@ -160,10 +187,10 @@
                   <input maxlength="11" minlength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
                 </div>
                 <div class="user-data__input user-data__input--textarea">
-                  <label for="textarea">
+                  <label>
                     <span class="visually-hidden">Задайте ваш вопрос</span>
+                    <textarea minlength="1" maxlength="1000" placeholder="Ваш вопрос" required=""></textarea>
                   </label>
-                  <textarea minlength="1" maxlength="1000" placeholder="Ваш вопрос" required=""></textarea>
                 </div>
               </div>
               <button type="button">Задать вопрос</button>
@@ -186,7 +213,7 @@
               <use xlink:href="./img/sprite_auto.svg#close"></use>
             </svg>
           </button>
-          <form action="#" method="submit" id="form-popup">
+          <form action="#" method="post" id="form-popup">
             <div class="modal-window__contacts">
               <div class="modal-window__input modal-window__input--name">
                 <label class="visually-hidden" for="name-input">Введите Ваше Имя</label>
@@ -197,10 +224,10 @@
                 <input maxlength="11" minlength="11" name="phone" type="tel" id="tel-input" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" aria-label="Поле для ввода Вашего номера телефона" required="">
               </div>
               <div class="modal-window__input modal-window__input--textarea">
-                <label for="textarea">
+                <label>
                   <span class="visually-hidden">Задайте ваш вопрос</span>
+                  <textarea minlength="1" maxlength="1000" placeholder="Ваш вопрос" required=""></textarea>
                 </label>
-                <textarea minlength="1" maxlength="1000" placeholder="Ваш вопрос" required=""></textarea>
               </div>
             </div>
             <button type="submit">Отправить</button>
@@ -216,7 +243,9 @@
       <div class="page-footer__container container">
         <div class="page-footer__top">
           <a href="#">
-            <img src="./img/svg/logo-dark.svg" width="202" height="52" alt="">
+            <svg width="202" height="52">
+              <use xlink:href="./img/sprite_auto.svg#logo-dark"></use>
+            </svg>
           </a>
           <span>1999-2018 SD Service Devices</span>
           <ul class="page-footer__social-list social-list">
