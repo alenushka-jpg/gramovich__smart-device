@@ -1,4 +1,5 @@
 'use strict';
+
 (function () {
 // Открытие модального окна по кнопке Заказать звонок
   var openModal = document.querySelector('.page-header__button');
@@ -62,25 +63,6 @@
     }
   });
 
-  // Маска на номер телефона
-  var Inputmask = window.Inputmask;
-
-  if (formPopup) {
-    var telInput = formPopup.querySelector('#tel-input');
-    var maskInput = new Inputmask('+7(999)999-99-99');
-    if (telInput) {
-      maskInput.mask(telInput);
-    }
-  }
-
-  if (userForm) {
-    var tel = userForm.querySelector('#tel');
-    var mask = new Inputmask('+7(999)999-99-99');
-    if (tel) {
-      mask.mask(tel);
-    }
-  }
-
   // Аккордеон в футере
   function showNavigation() {
     listNavigation.classList.toggle('page-footer__list-navigation--open');
@@ -110,4 +92,11 @@
 
   navigationButton.addEventListener('click', onNavigationClick);
   contactsButton.addEventListener('click', onContactsClick);
+
+  var inputsTel = document.querySelectorAll('input[type="tel"]');
+
+  Inputmask({
+    "mask": "+7(999)999-99-99",
+    showMaskOnHover: false
+  }).mask(inputsTel);
 })();
