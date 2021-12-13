@@ -63,25 +63,25 @@
   });
 
   // Маска на номер телефона
-  const Inputmask = window.Inputmask;
+  var Inputmask = window.Inputmask;
 
   if (formPopup) {
-    const telInput = formPopup.querySelector('#tel-input');
-    const mask = new Inputmask('+7(999)999-99-99');
+    var telInput = formPopup.querySelector('#tel-input');
+    var maskInput = new Inputmask('+7(999)999-99-99');
     if (telInput) {
-      mask.mask(telInput);
+      maskInput.mask(telInput);
     }
   }
 
   if (userForm) {
-    const tel = userForm.querySelector('#tel');
-    const mask = new Inputmask('+7(999)999-99-99');
+    var tel = userForm.querySelector('#tel');
+    var mask = new Inputmask('+7(999)999-99-99');
     if (tel) {
       mask.mask(tel);
     }
   }
 
-  //Аккордеон в футере
+  // Аккордеон в футере
   function showNavigation() {
     listNavigation.classList.toggle('page-footer__list-navigation--open');
   }
