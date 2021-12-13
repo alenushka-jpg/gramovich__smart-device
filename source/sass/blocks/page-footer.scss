@@ -172,7 +172,8 @@
   }
 }
 
-.page-footer__list-navigation--open {
+.page-footer__list-navigation--open,
+.no-js {
   @media (max-width: $mobile-width) {
     .page-footer__navigation-button {
       background-image: url("../img/svg/minus.svg");
@@ -191,7 +192,8 @@
   }
 }
 
-.page-footer__list-contacts--open {
+.page-footer__list-contacts--open,
+.no-js {
   @media (max-width: $mobile-width) {
     .page-footer__contacts-button {
       background-image: url("../img/svg/minus.svg");
@@ -210,3 +212,9 @@
   }
 }
 
+.no-js {
+  .page-footer__contacts-button,
+  .page-footer__navigation-button {
+    background-image: none;
+  }
+}

@@ -275,7 +275,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__list-navigation">
+        <div class="page-footer__list-navigation no-js">
           <h3>Разделы сайта</h3>
           <button class="page-footer__navigation-button" type="button" aria-label="Открыть/закрыть навигацию"></button>
           <ul>
@@ -302,7 +302,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__list-contacts">
+        <div class="page-footer__list-contacts no-js">
           <h3>Наш офис</h3>
           <button class="page-footer__contacts-button" type="button" aria-label="Открыть/закрыть контакты"></button>
           <ul>
@@ -344,6 +344,10 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.querySelector('.page-footer__list-navigation').classList.remove('no-js');
+      document.querySelector('.page-footer__list-contacts').classList.remove('no-js');
+    </script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>
