@@ -86,16 +86,26 @@
     listNavigation.classList.toggle('page-footer__list-navigation--open');
   }
 
-  function onNavigationClick() {
-    showNavigation()
+  function showContacts() {
+    listContacts.classList.toggle('page-footer__list-contacts--open');
   }
 
-  function showContacts() {
-    listContacts.classList.toggle('page-footer__list-navigation--open');
+  function closeNavigation() {
+    listNavigation.classList.remove('page-footer__list-navigation--open');
+  }
+
+  function closeContacts() {
+    listContacts.classList.remove('page-footer__list-contacts--open');
+  }
+
+  function onNavigationClick() {
+    showNavigation();
+    closeContacts();
   }
 
   function onContactsClick() {
-    showContacts()
+    showContacts();
+    closeNavigation();
   }
 
   navigationButton.addEventListener('click', onNavigationClick);
