@@ -8,6 +8,10 @@
   var formPopup = modalWindow.querySelector('#form-popup');
   var username = document.querySelector('[name=username]');
   var phone = document.querySelector('[name=phone]');
+  var listNavigation = document.querySelector('.page-footer__list-navigation');
+  var listContacts = document.querySelector('.page-footer__list-contacts');
+  var contactsButton = document.querySelector('.page-footer__contacts-button');
+  var navigationButton = document.querySelector('.page-footer__navigation-button');
 
   function showWindow() {
     modalWindow.classList.add('modal-window--show');
@@ -75,4 +79,24 @@
       mask.mask(tel);
     }
   }
+
+  //Аккордеон в футере
+  function showNavigation() {
+    listNavigation.classList.toggle('page-footer__list-navigation--open');
+  }
+
+  function onNavigationClick() {
+    showNavigation()
+  }
+
+  function showContacts() {
+    listContacts.classList.toggle('page-footer__list-navigation--open');
+  }
+
+  function onContactsClick() {
+    showContacts()
+  }
+
+  navigationButton.addEventListener('click', onNavigationClick);
+  contactsButton.addEventListener('click', onContactsClick);
 })();
