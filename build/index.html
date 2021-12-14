@@ -52,7 +52,22 @@
             <span>Получить бесплатную консультацию</span>
             <span>Бесплатная консультация</span>
           </a>
-          <div class="promo__picture"></div>
+          <div class="promo__picture">
+            <picture>
+              <!-- 588x874 c ретиной; 294x437  без ретины -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="./img/chip-mobile.webp 1x, ./img/chip-mobile@2x.webp 2x">
+              <!-- 660x932 c ретиной; 330x466 без ретины -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="./img/chip-tablet.webp 1x, ./img/chip-tablet@2x.webp 2x">
+              <!-- 1426х1310 c ретиной; 713x655 без ретины -->
+              <source type="image/webp" srcset="./img/chip.webp 1x, ./img/chip@2x.webp 2x">
+              <!-- 294x437  без ретины; 588x874 c ретиной -->
+              <source media="(max-width: 767px)" srcset="./img/chip-mobile.jpg 1x, ./img/chip-mobile.jpg 2x">
+              <!-- 330x466 без ретины; 660x932 c ретиной -->
+              <source media="(max-width: 1023px)" srcset="./img/chip-tablet.jpg 1x, ./img/chip-tablet.jpg 2x">
+              <!-- 713x655 без ретины; 1426х1310 c ретиной -->
+              <img src="./img/chip.jpg" srcset="./img/chip.jpg 2x" width="713" height="655" loading="lazy" alt="Печать плат">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="advantage">
@@ -172,7 +187,14 @@
       </section>
       <section class="user-data" id="questions">
         <div class="user-data__container container">
-          <div class="user-data__pucture"></div>
+          <div class="user-data__pucture">
+            <picture>
+              <!-- 706x517 без ретины; 1412х1034 c ретиной -->
+              <source type="image/webp" srcset="./img/airplane.webp 1x, ./img/airplane@2x.webp 2x">
+              <!-- 706x517 без ретины; 1412х1034 c ретиной -->
+              <img src="./img/airplane.png" srcset="./img/airplane.png 2x" width="706" height="517" loading="lazy" alt="Картинка бумажного самолетика">
+            </picture>
+          </div>
           <div class="user-data__content">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>

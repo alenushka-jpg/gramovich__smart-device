@@ -14,6 +14,7 @@
   var listContacts = document.querySelector('.page-footer__list-contacts');
   var contactsButton = document.querySelector('.page-footer__contacts-button');
   var navigationButton = document.querySelector('.page-footer__navigation-button');
+  var inputsTel = document.querySelectorAll('input[type="tel"]');
 
   function showWindow() {
     modalWindow.classList.add('modal-window--show');
@@ -93,10 +94,11 @@
   navigationButton.addEventListener('click', onNavigationClick);
   contactsButton.addEventListener('click', onContactsClick);
 
-  var inputsTel = document.querySelectorAll('input[type="tel"]');
+  // // Маска номера на инпут
+  // var inputMask;
 
-  Inputmask({
-    "mask": "+7(999)999-99-99",
-    showMaskOnHover: false
-  }).mask(inputsTel);
+  // inputMask({
+  //   'mask': '+7(999) 999-99-99',
+  //   showMaskOnHover: false
+  // }).mask(inputsTel);
 })();
