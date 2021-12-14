@@ -52,6 +52,15 @@
   }
 }
 
+.services li {
+  height: auto;
+  width: calc(100%/3 - 20px);
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
 .services li:first-child {
   @media (max-width: $tablet-width) {
     padding-right: 4px;

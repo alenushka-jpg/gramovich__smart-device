@@ -1,6 +1,7 @@
 .user-data {
   position: relative;
   background-color: $additional-color;
+  overflow: hidden;
 
   &::before {
     position: absolute;
