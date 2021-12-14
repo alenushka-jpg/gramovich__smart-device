@@ -13,6 +13,9 @@ html {
 
 body {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
@@ -55,6 +58,10 @@ button {
   text-transform: uppercase;
   color: $basic-white;
   background-color: inherit;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .overlay {
