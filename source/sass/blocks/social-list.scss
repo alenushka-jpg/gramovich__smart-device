@@ -1,8 +1,9 @@
 .social-list {
   display: flex;
-  width: 112px;
-  height: 26px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 112px;
   padding: 0;
   margin-top: 0;
   margin-bottom: 13px;
@@ -17,4 +18,8 @@
     padding-left: 5px;
     padding-right: 0;
   }
+}
+
+.social-list a {
+  height: 27px;
 }

@@ -25,6 +25,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 53px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -92,6 +94,8 @@
 }
 
 .page-footer__list-navigation {
+  width: 554px;
+
   @media (max-width: $tablet-width) {
     padding-left: 25px;
   }
@@ -119,11 +123,9 @@
 
 .page-footer__list-navigation ul {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   column-gap: 59px;
-  width: 439px;
-  height: 100px;
+  min-height: 100px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -139,6 +141,17 @@
 
   @media (max-width: $mobile-width) {
     display: none;
+  }
+}
+
+.page-footer__list-navigation li {
+  width: 243px;
+
+
+  @media (max-width: $tablet-width) {
+    &:nth-child(odd) {
+      order: -1;
+    }
   }
 }
 

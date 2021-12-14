@@ -39,12 +39,14 @@
 }
 
 .page-header__contacts {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 425px 180px;
   align-items: center;
+  column-gap: 49px;
   width: 654px;
 
   @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
     width: auto;
   }
 }
@@ -52,6 +54,7 @@
 .page-header button {
   padding: 14px 13px 15px;
   width: 180px;
+  min-height: 45px;
   font-family: "Roboto Condensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 14px;

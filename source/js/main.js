@@ -94,11 +94,11 @@
   navigationButton.addEventListener('click', onNavigationClick);
   contactsButton.addEventListener('click', onContactsClick);
 
-  // // Маска номера на инпут
-  // var inputMask;
+  // Маска номера на инпут
+  var InputMask;
 
-  // inputMask({
-  //   'mask': '+7(999) 999-99-99',
-  //   showMaskOnHover: false
-  // }).mask(inputsTel);
+  InputMask({
+    'mask': '+7(999) 999-99-99',
+    showMaskOnHover: false
+  }).mask(inputsTel);
 })();
