@@ -42,7 +42,7 @@
   @media (max-width: $mobile-width) {
     flex-direction: column;
     row-gap: 0;
-    padding: 46px 32px 54px 25px;
+    padding: 46px 32px 48px 25px;
     margin-bottom: 0;
     border-bottom: none;
   }
@@ -64,6 +64,8 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -104,7 +106,7 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 31px;
     padding-left: 7px;
-    padding-top: 0;
+    padding-top: 21px;
   }
 }
 

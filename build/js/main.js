@@ -95,9 +95,8 @@
   contactsButton.addEventListener('click', onContactsClick);
 
   // Маска номера на инпут
-  var InputMask;
 
-  InputMask({
+  inputMask({
     'mask': '+7(999) 999-99-99',
     showMaskOnHover: false
   }).mask(inputsTel);
