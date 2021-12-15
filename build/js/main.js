@@ -2,6 +2,7 @@
 
 (function () {
 // Открытие модального окна по кнопке Заказать звонок
+  var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
   var userForm = document.querySelector('#form-user');
@@ -24,8 +25,17 @@
     modalWindow.classList.remove('modal-window--show');
   }
 
+  function bodyHidden() {
+    body.style.overflow = 'hidden';
+  }
+
+  function visible() {
+    body.style.overflow = 'visible';
+  }
+
   function onOpenClick() {
     showWindow();
+    bodyHidden();
     name.focus();
   }
 
