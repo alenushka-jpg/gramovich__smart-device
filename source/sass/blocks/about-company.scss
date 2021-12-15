@@ -81,7 +81,7 @@
   display: inline-block;
   width: 180px;
   min-height: 45px;
-  padding: 15px 50px 12px;
+  padding: 15px 20px 12px;
   font-family: "Roboto Condensed", "Courier New", monospace;
   font-weight: 700;
   font-size: 14px;
@@ -90,6 +90,7 @@
   text-transform: uppercase;
   color: $additional-color;
   text-decoration: none;
+  text-align: center;
   border: 1px solid $additional-color;
   border-radius: 5px;
 

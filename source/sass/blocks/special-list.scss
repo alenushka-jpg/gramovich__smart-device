@@ -16,6 +16,7 @@
 .special-list ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 58%;
   padding-left: 0;
   margin: 0;
