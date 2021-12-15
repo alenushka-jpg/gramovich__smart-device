@@ -41,6 +41,7 @@
 
   function onCloseClick() {
     hideModal();
+    visible()
   }
 
   openModal.addEventListener('click', onOpenClick);

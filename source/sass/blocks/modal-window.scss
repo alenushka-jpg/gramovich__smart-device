@@ -1,7 +1,7 @@
 .modal-window {
   display: none;
   position: fixed;
-  top: 0;
+  top: -112px;
   left: 0;
   z-index: 10;
   width: 100%;
@@ -39,6 +39,7 @@
 }
 
 .modal-window p {
+  padding-right: 10px;
   margin-top: 0;
   margin-bottom: 32px;
   font-size: 16px;

@@ -49,6 +49,10 @@
   text-decoration: none;
   color: rgba($additional-dark, 0.5);
 
+  &:hover {
+    color: $additional-dark;
+  }
+
   @media (max-width: $mobile-width) {
     text-align: center;
   }
