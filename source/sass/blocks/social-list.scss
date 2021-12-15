@@ -8,10 +8,10 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;
+    padding-bottom: 7px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 117px;
     padding-left: 5px;
     padding-right: 0;
   }
@@ -19,6 +19,12 @@
 
 .social-list li {
   margin-right: 16px;
+
+  @media (max-width: $tablet-width) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .social-list a {
