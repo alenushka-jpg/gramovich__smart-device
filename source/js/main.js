@@ -109,11 +109,10 @@
 
   // Маска номера на инпут
 
-  var element = document.getElementById('tel-input');
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  var mask = IMask(element, maskOptions);
+  var mask = IMask(inputsTel, maskOptions);
 
   mask.value = '+7(999)999-99-99';
   mask.unmaskedValue = "70000000000";
