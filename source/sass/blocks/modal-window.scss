@@ -1,7 +1,7 @@
 .modal-window {
   display: none;
   position: fixed;
-  top: -112px;
+  top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
@@ -15,7 +15,8 @@
 }
 
 .modal-window__form-popup {
-  position: relative;
+  position: absolute;
+  top: 136px;
   width: 490px;
   min-height: 605px;
   padding: 33px 40px 36px;

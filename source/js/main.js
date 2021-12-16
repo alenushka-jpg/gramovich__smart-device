@@ -1,7 +1,9 @@
 'use strict';
 
 (function () {
-// Открытие модального окна по кнопке Заказать звонок
+  import IMask from 'imask';
+
+  // Открытие модального окна по кнопке Заказать звонок
   var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
@@ -41,7 +43,7 @@
 
   function onCloseClick() {
     hideModal();
-    visible()
+    visible();
   }
 
   openModal.addEventListener('click', onOpenClick);
@@ -107,8 +109,12 @@
 
   // Маска номера на инпут
 
-  inputMask({
-    'mask': '+7(999) 999-99-99',
-    showMaskOnHover: false
-  }).mask(inputsTel);
+  var element = document.getElementById('tel-input');
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  var mask = IMask(element, maskOptions);
+
+  mask.value = '+7(999)999-99-99';
+  mask.unmaskedValue = "70000000000";
 })();
