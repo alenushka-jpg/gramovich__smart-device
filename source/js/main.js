@@ -1,8 +1,6 @@
 'use strict';
 
 (function () {
-  var IMask = require('/imask.js');
-
   // Открытие модального окна по кнопке Заказать звонок
   var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
@@ -109,11 +107,6 @@
 
   // Маска номера на инпут
 
-  var maskOptions = {
-    mask: '+{7}(000)000-00-00'
-  };
-  var mask = IMask(inputsTel, maskOptions);
-
-  mask.value = '+7(999)999-99-99';
-  mask.unmaskedValue = '70000000000';
+  var im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(inputsTel);
 })();
