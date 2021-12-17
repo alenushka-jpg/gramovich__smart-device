@@ -1,8 +1,6 @@
 'use strict';
 
 (function () {
-  // import {IMask} from 'imask';
-  // var iMask = require('.');
   var IMask = require('/imask.js');
 
   // Открытие модального окна по кнопке Заказать звонок
