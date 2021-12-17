@@ -1,7 +1,9 @@
 'use strict';
 
 (function () {
-  import IMask from 'imask';
+  // import {IMask} from 'imask';
+  // var iMask = require('.');
+  var iMask = require('/imask.js');
 
   // Открытие модального окна по кнопке Заказать звонок
   var body = document.querySelector('body');
@@ -109,11 +111,10 @@
 
   // Маска номера на инпут
 
-  var element = document.getElementById('tel-input');
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  var mask = IMask(element, maskOptions);
+  var mask = iMask(inputsTel, maskOptions);
 
   mask.value = '+7(999)999-99-99';
   mask.unmaskedValue = "70000000000";
