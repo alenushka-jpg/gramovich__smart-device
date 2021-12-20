@@ -1,9 +1,7 @@
 .contacts-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 424px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 440px;
   padding: 0;
   margin: 0;
   list-style: none;

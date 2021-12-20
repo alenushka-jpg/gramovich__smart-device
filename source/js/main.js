@@ -16,6 +16,7 @@
   var contactsButton = document.querySelector('.page-footer__contacts-button');
   var navigationButton = document.querySelector('.page-footer__navigation-button');
   var inputsTel = document.querySelectorAll('input[type="tel"]');
+  var overlay = document.querySelector('.overlay');
 
   function showWindow() {
     modalWindow.classList.add('modal-window--show');
@@ -44,6 +45,11 @@
     visible();
   }
 
+  if (overlay) {
+    overlay.addEventListener('click', hideModal);
+  }
+
+
   openModal.addEventListener('click', onOpenClick);
   closeModal.addEventListener('click', onCloseClick);
 
@@ -56,24 +62,24 @@
     }
   });
 
-  // local storage
-  formPopup.addEventListener('submit', function (evt) {
-    if (!username.value || !phone.value) {
-      evt.preventDefault();
-    } else {
-      localStorage.setItem('username', username.value);
-      localStorage.setItem('phone', phone.value);
-    }
-  });
+  // // local storage
+  // formPopup.addEventListener('submit', function (evt) {
+  //   if (!username.value || !phone.value) {
+  //     evt.preventDefault();
+  //   } else {
+  //     localStorage.setItem('username', username.value);
+  //     localStorage.setItem('phone', phone.value);
+  //   }
+  // });
 
-  userForm.addEventListener('submit', function (evt) {
-    if (!name.value || !phone.value) {
-      evt.preventDefault();
-    } else {
-      localStorage.setItem('name', name.value);
-      localStorage.setItem('phone', phone.value);
-    }
-  });
+  // userForm.addEventListener('submit', function (evt) {
+  //   if (!name.value || !phone.value) {
+  //     evt.preventDefault();
+  //   } else {
+  //     localStorage.setItem('name', name.value);
+  //     localStorage.setItem('phone', phone.value);
+  //   }
+  // });
 
   // Аккордеон в футере
   function showNavigation() {
