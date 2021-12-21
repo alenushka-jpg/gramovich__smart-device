@@ -32,6 +32,7 @@
     width: 100%;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 19px 25px 21px;
     margin-bottom: 38px;
     border-bottom: 1px solid rgba($grey, 0.2);
@@ -68,7 +69,8 @@
 }
 
 .page-footer a {
-  display: inline-block;;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .page-footer h3 {
