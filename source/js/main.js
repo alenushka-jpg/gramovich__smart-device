@@ -25,6 +25,13 @@
   var textareas = mainBody.querySelectorAll('textarea');
   var labels = mainBody.querySelectorAll('label');
 
+  var phoneInputModal = document.querySelector('.js-phone-input-modal');
+  var nameInputModal = document.querySelector('.js-name-input-modal');
+  var textareaInputModal = document.querySelector('.js-textarea-input-modal');
+  var checkboxInputModal = document.querySelector('.js-checkbox-input-modal');
+  var resultModal = document.querySelector('.js-result-modal');
+  var formModal = document.querySelector('.js-popup-form');
+
   function setBlur(e) {
     e.forEach(function (v) {
       v.setAttribute('tabindex', '-1');
@@ -72,6 +79,44 @@
   function onCloseClick() {
     hideModal();
     visible();
+  }
+
+  function validation(phone, name, isChecked) {
+    var valid = true;
+
+    if (name.trim() === 0 || phone.length < 17 || isChecked === false) {
+      valid = false;
+    }
+
+    return valid;
+  }
+
+  function localStorageData(data) {
+    localStorage.setItem('phone', data.userPhone);
+    localStorage.setItem('name', data.userName);
+    localStorage.setItem('message', data.userMessage);
+  }
+
+  function onSubmitModalForm(e) {
+    e.preventDefault();
+    var userPhone = phoneInputModal.value;
+    var userName = nameInputModal.value;
+    var userMessage = textareaInputModal.value;
+    var isChecked = checkboxInputModal.checked;
+
+    if (validation(userPhone, userName, isChecked)) {
+      resultModal.style.display = 'flex';
+
+      localStorageData({
+        userPhone: userPhone,
+        userName: userName,
+        userMessage: userMessage
+      });
+    }
+  }
+
+  if (formModal) {
+    formModal.addEventListener('submit', onSubmitModalForm);
   }
 
   if (overlay) {

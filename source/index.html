@@ -201,7 +201,7 @@
               <div class="user-data__content">
                 <h2>Остались вопросы? Задайте их нам!</h2>
                 <p>Мы проконсультируем Вас бесплатно</p>
-                <form action="https://echo.htmlacademy.ru" method="post" id="form-user">
+                <form action="https://echo.htmlacademy.ru" method="POST" id="form-user">
                   <div class="user-data__contacts">
                     <div class="user-data__input user-data__input--name">
                       <label class="visually-hidden" for="name">Введите Ваше Имя</label>
@@ -222,7 +222,7 @@
                   </div>
                   <button type="button">Задать вопрос</button>
                   <div class="user-data__checkbox">
-                    <input type="checkbox" id="checkbox" checked>
+                    <input type="checkbox" id="checkbox" checked required>
                     <label for="checkbox">Я согласен на обработку персональных данных</label>
                   </div>
                 </form>
@@ -356,29 +356,32 @@
             <use xlink:href="./img/sprite_auto.svg#close"></use>
           </svg>
         </button>
-        <form action="#" method="post" id="form-popup">
+        <form class="js-popup-form" action="https://echo.htmlacademy.ru" method="POST" id="form-popup">
           <div class="modal-window__contacts">
             <div class="modal-window__input modal-window__input--name">
               <label class="visually-hidden" for="name-input">Введите Ваше Имя</label>
-              <input maxlength="50" minlength="1" name="username" type="text" id="name-input" placeholder="Имя" tabindex="1"
+              <input class="js-name-input-modal" maxlength="50" minlength="1" name="username" type="text" id="name-input" placeholder="Имя" tabindex="1"
               aria-label="Поле для ввода Вашего имени" required autofocus>
             </div>
             <div class="modal-window__input modal-window__input--tel">
               <label class="visually-hidden" for="tel-input">Введите Ваш номер телефона</label>
-              <input maxlength="18" minlength="18" name="phone" type="tel" id="tel-input" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" tabindex="2"
+              <input class="js-phone-input-modal" maxlength="18" minlength="18" name="phone" type="tel" id="tel-input" pattern="\+?[0-9\s\-\(\)]+" placeholder="Телефон" tabindex="2"
               aria-label="Поле для ввода Вашего номера телефона" required>
             </div>
             <div class="modal-window__input modal-window__input--textarea">
               <label tabindex="3">
                 <span class="visually-hidden">Задайте ваш вопрос</span>
-                <textarea minlength="1" maxlength="1000" placeholder="Ваш вопрос" required></textarea>
+                <textarea class="js-textarea-input-modal" minlength="1" maxlength="1000" placeholder="Ваш вопрос" required></textarea>
               </label>
             </div>
           </div>
           <button type="submit" tabindex="4">Отправить</button>
           <div class="modal-window__checkbox">
-            <input class="visually-hidden" type="checkbox" id="checkbox-modal" tabindex="5" required checked>
+            <input class="visually-hidden js-checkbox-input-modal" type="checkbox" id="checkbox-modal" tabindex="5" required checked>
             <label for="checkbox-modal">Я согласен на обработку персональных данных</label>
+          </div>
+          <div class="modal-window__result js-result-modal">
+            <p>Ваш вопрос успешно отправлен</p>
           </div>
         </form>
       </div>
