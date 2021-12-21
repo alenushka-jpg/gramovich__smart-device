@@ -5,10 +5,10 @@
   var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
-  var userForm = document.querySelector('#form-user');
+  // var userForm = document.querySelector('#form-user');
   var modalWindow = document.querySelector('.modal-window');
-  var formPopup = modalWindow.querySelector('#form-popup');
-  var username = document.querySelector('[name=username]');
+  // var formPopup = modalWindow.querySelector('#form-popup');
+  // var username = document.querySelector('[name=username]');
   var name = document.querySelector('[name=username]');
   var phone = document.querySelector('[name=phone]');
   var listNavigation = document.querySelector('.page-footer__list-navigation');
@@ -31,6 +31,14 @@
   var checkboxInputModal = document.querySelector('.js-checkbox-input-modal');
   var resultModal = document.querySelector('.js-result-modal');
   var formModal = document.querySelector('.js-popup-form');
+
+  var phoneInput = document.querySelector('.js-phone-input');
+  var nameInput = document.querySelector('.js-name-input');
+  var messageInput = document.querySelector('.js-message-input');
+  var checkboxInput = document.querySelector('.js-checkbox-input');
+  var questionsResult = document.querySelector('.js-questions-result');
+  var questionsForm = document.querySelector('.js-questions-form');
+  var sendButton = document.querySelector('.js-send-button');
 
   function setBlur(e) {
     e.forEach(function (v) {
@@ -81,6 +89,9 @@
     visible();
   }
 
+  openModal.addEventListener('click', onOpenClick);
+  closeModal.addEventListener('click', onCloseClick);
+
   function validation(phone, name, isChecked) {
     var valid = true;
 
@@ -115,17 +126,52 @@
     }
   }
 
+  function showQuestionsResult() {
+    questionsResult.style.display = 'flex';
+  }
+
+  function onSubmitQuestionsForm(e) {
+    e.preventDefault();
+
+    var userPhone = phoneInput.value;
+    var userName = nameInput.value;
+    var userMessage = messageInput.value;
+    var isChecked = checkboxInput.checked;
+
+    if (validation(userPhone, userName, isChecked)) {
+      localStorageData({
+        userPhone: userPhone,
+        userName: userName,
+        userMessage: userMessage
+      });
+    }
+  }
+
+  function hideQuestionsResult() {
+    questionsResult.style.display = 'none';
+  }
+
+  sendButton.addEventListener('click', showQuestionsResult);
+
   if (formModal) {
     formModal.addEventListener('submit', onSubmitModalForm);
+  }
+
+  if (questionsForm) {
+    questionsForm.addEventListener('submit', onSubmitQuestionsForm);
   }
 
   if (overlay) {
     overlay.addEventListener('click', hideModal);
   }
 
+  if (resultModal) {
+    resultModal.addEventListener('click', hideModal);
+  }
 
-  openModal.addEventListener('click', onOpenClick);
-  closeModal.addEventListener('click', onCloseClick);
+  if (questionsResult) {
+    questionsResult.addEventListener('click', hideQuestionsResult);
+  }
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
@@ -135,25 +181,6 @@
       }
     }
   });
-
-  // // local storage
-  // formPopup.addEventListener('submit', function (evt) {
-  //   if (!username.value || !phone.value) {
-  //     evt.preventDefault();
-  //   } else {
-  //     localStorage.setItem('username', username.value);
-  //     localStorage.setItem('phone', phone.value);
-  //   }
-  // });
-
-  // userForm.addEventListener('submit', function (evt) {
-  //   if (!name.value || !phone.value) {
-  //     evt.preventDefault();
-  //   } else {
-  //     localStorage.setItem('name', name.value);
-  //     localStorage.setItem('phone', phone.value);
-  //   }
-  // });
 
   // Аккордеон в футере
   function showNavigation() {

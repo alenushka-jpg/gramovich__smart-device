@@ -88,6 +88,7 @@
 }
 
 .user-data form {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -294,4 +295,18 @@
 
 .user-data__checkbox input:focus + label::after {
   border: 1px solid $basic-black;
+}
+
+.user-data__result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($basic-black, 0.6);
+  color: $basic-white;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: none;
 }
