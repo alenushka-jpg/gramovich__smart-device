@@ -18,12 +18,41 @@
   var inputsTel = document.querySelectorAll('input[type="tel"]');
   var overlay = document.querySelector('.overlay');
 
+  var mainBody= document.querySelector('.main-body');
+  var links = mainBody.querySelectorAll('a');
+  var inputs = mainBody.querySelectorAll('input');
+  var buttons = mainBody.querySelectorAll('button');
+  var textareas = mainBody.querySelectorAll('textarea');
+  var labels = mainBody.querySelectorAll('label');
+
+  function setBlur(e) {
+    e.forEach(function (v) {
+      v.setAttribute('tabindex', '-1');
+    });
+  }
+
+  function removeBlur(e) {
+    e.forEach(function (v) {
+      v.removeAttribute('tabindex');
+    });
+  }
+
   function showWindow() {
     modalWindow.classList.add('modal-window--show');
+    setBlur(links);
+    setBlur(inputs);
+    setBlur(buttons);
+    setBlur(textareas);
+    setBlur(labels);
   }
 
   function hideModal() {
     modalWindow.classList.remove('modal-window--show');
+    removeBlur(links);
+    removeBlur(inputs);
+    removeBlur(buttons);
+    removeBlur(textareas);
+    removeBlur(labels);
   }
 
   function bodyHidden() {
