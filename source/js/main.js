@@ -2,7 +2,7 @@
 
 (function () {
   // Открытие модального окна по кнопке Заказать звонок
-  var body = document.querySelector('body');
+  // var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
   // var userForm = document.querySelector('#form-user');
@@ -10,7 +10,7 @@
   // var formPopup = modalWindow.querySelector('#form-popup');
   // var username = document.querySelector('[name=username]');
   var name = document.querySelector('[name=username]');
-  var phone = document.querySelector('[name=phone]');
+  // var phone = document.querySelector('[name=phone]');
   var listNavigation = document.querySelector('.page-footer__list-navigation');
   var listContacts = document.querySelector('.page-footer__list-contacts');
   var contactsButton = document.querySelector('.page-footer__contacts-button');
@@ -37,7 +37,7 @@
   var messageInput = document.querySelector('.js-message-input');
   var checkboxInput = document.querySelector('.js-checkbox-input');
   var questionsResult = document.querySelector('.js-questions-result');
-  var questionsForm = document.querySelector('.js-questions-form');
+  var questionsForm = document.querySelector('.js-question-form');
   var sendButton = document.querySelector('.js-send-button');
 
   function setBlur(e) {
@@ -74,7 +74,7 @@
     document.body.style.overflow = 'hidden';
   }
 
-  function visible() {
+  function visibleBody() {
     document.body.style.overflow = 'visible';
   }
 
@@ -86,7 +86,7 @@
 
   function onCloseClick() {
     hideModal();
-    visible();
+    visibleBody();
   }
 
   openModal.addEventListener('click', onOpenClick);
@@ -95,7 +95,7 @@
   function validation(phone, name, isChecked) {
     var valid = true;
 
-    if (name.trim() === 0 || phone.length < 17 || isChecked === false) {
+    if (name === 0 || phone.length < 18 || isChecked === false) {
       valid = false;
     }
 
@@ -158,12 +158,15 @@
   }
 
   if (questionsForm) {
+    validation();
     questionsForm.addEventListener('submit', onSubmitQuestionsForm);
   }
 
   if (overlay) {
     overlay.addEventListener('click', hideModal);
   }
+
+  overlay.addEventListener('click', visibleBody);
 
   if (resultModal) {
     resultModal.addEventListener('click', hideModal);

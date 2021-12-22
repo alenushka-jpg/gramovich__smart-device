@@ -216,11 +216,11 @@
                     <div class="user-data__input user-data__input--textarea">
                       <label>
                         <span class="visually-hidden">Задайте ваш вопрос</span>
-                        <textarea class="js-message-input" minlength="1" maxlength="1000" placeholder="Ваш вопрос" required></textarea>
+                        <textarea class="js-message-input" minlength="1" maxlength="1000" placeholder="Ваш вопрос" id="message" required></textarea>
                       </label>
                     </div>
                   </div>
-                  <button class="js-send-button" type="button">Задать вопрос</button>
+                  <button class="js-send-button" type="submit">Задать вопрос</button>
                   <div class="user-data__checkbox">
                     <input class="js-checkbox-input" type="checkbox" id="checkbox" checked required>
                     <label for="checkbox">Я согласен на обработку персональных данных</label>
@@ -325,7 +325,7 @@
           </div>
         </div>
         <div class="page-footer__bottom">
-          <div class="container">
+          <div class="page-footer__bottom-container container">
             <div class="special-list">
               <ul>
                 <li>

@@ -37,7 +37,7 @@
   var messageInput = document.querySelector('.js-message-input');
   var checkboxInput = document.querySelector('.js-checkbox-input');
   var questionsResult = document.querySelector('.js-questions-result');
-  var questionsForm = document.querySelector('.js-questions-form');
+  var questionsForm = document.querySelector('.js-question-form');
   var sendButton = document.querySelector('.js-send-button');
 
   function setBlur(e) {
@@ -74,7 +74,7 @@
     document.body.style.overflow = 'hidden';
   }
 
-  function visible() {
+  function visibleBody() {
     document.body.style.overflow = 'visible';
   }
 
@@ -86,7 +86,7 @@
 
   function onCloseClick() {
     hideModal();
-    visible();
+    visibleBody();
   }
 
   openModal.addEventListener('click', onOpenClick);
@@ -95,7 +95,7 @@
   function validation(phone, name, isChecked) {
     var valid = true;
 
-    if (name.trim() === 0 || phone.length < 17 || isChecked === false) {
+    if (name === 0 || phone.length < 18 || isChecked === false) {
       valid = false;
     }
 
@@ -158,12 +158,15 @@
   }
 
   if (questionsForm) {
+    validation();
     questionsForm.addEventListener('submit', onSubmitQuestionsForm);
   }
 
   if (overlay) {
     overlay.addEventListener('click', hideModal);
   }
+
+  overlay.addEventListener('click', visibleBody);
 
   if (resultModal) {
     resultModal.addEventListener('click', hideModal);

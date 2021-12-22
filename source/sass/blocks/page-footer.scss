@@ -89,6 +89,12 @@
   }
 }
 
+.page-footer__top a {
+  &:nth-child(3n-1) {
+    display: none;
+  }
+}
+
 .page-footer__top span {
   display: none;
   font-size: 13px;
@@ -166,6 +172,11 @@
 
 .page-footer__bottom {
   border-top: 1px solid rgba($grey, 0.2);
+}
+
+.page-footer__bottom-container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .page-footer__list-navigation a,
