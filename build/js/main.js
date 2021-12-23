@@ -2,15 +2,10 @@
 
 (function () {
   // Открытие модального окна по кнопке Заказать звонок
-  // var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
-  // var userForm = document.querySelector('#form-user');
   var modalWindow = document.querySelector('.modal-window');
-  // var formPopup = modalWindow.querySelector('#form-popup');
-  // var username = document.querySelector('[name=username]');
   var name = document.querySelector('[name=username]');
-  // var phone = document.querySelector('[name=phone]');
   var listNavigation = document.querySelector('.page-footer__list-navigation');
   var listContacts = document.querySelector('.page-footer__list-contacts');
   var contactsButton = document.querySelector('.page-footer__contacts-button');

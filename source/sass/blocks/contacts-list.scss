@@ -1,17 +1,32 @@
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   width: 440px;
   padding: 0;
   margin: 0;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    width: 83px;
+    width: 84px;
   }
 
   @media (max-width: $mobile-width) {
     width: 73px;
+  }
+}
+
+.contacts-list li {
+  @media (max-width: $tablet-width) {
+    &:first-child {
+      margin-right: 35px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &:first-child {
+      margin-right: 24px;
+    }
   }
 }
 

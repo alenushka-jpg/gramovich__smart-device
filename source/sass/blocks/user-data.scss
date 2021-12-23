@@ -116,6 +116,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    flex-direction: column;
     margin-bottom: 26px;
   }
 }
@@ -146,6 +147,11 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 30px;
+
+    &--name,
+    &--tel {
+      width: 100%;
+    }
 
     &--textarea {
       margin-bottom: 0;
