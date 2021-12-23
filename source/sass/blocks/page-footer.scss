@@ -95,6 +95,8 @@
 .page-footer__list-contacts > a {
   @media (max-width: $mobile-width) {
     width: 100%;
+    pointer-events: none;
+    cursor: pointer;
   }
 }
 
@@ -227,6 +229,7 @@
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
+    cursor: pointer;
   }
 }
 
@@ -234,7 +237,8 @@
 .page-footer__list-contacts--open,
 .no-js {
   @media (max-width: $mobile-width) {
-    .page-footer__link h3 {
+    .page-footer__link-contacts h3,
+    .page-footer__link-navigation h3 {
       padding-bottom: 0;
     }
 

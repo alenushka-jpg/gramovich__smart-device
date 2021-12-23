@@ -8,8 +8,6 @@
   var name = document.querySelector('[name=username]');
   var listNavigation = document.querySelector('.page-footer__list-navigation');
   var listContacts = document.querySelector('.page-footer__list-contacts');
-  var contactsButton = document.querySelector('.page-footer__contacts-button');
-  var navigationButton = document.querySelector('.page-footer__navigation-button');
   var inputsTel = document.querySelectorAll('input[type="tel"]');
   var overlay = document.querySelector('.overlay');
 
@@ -209,8 +207,8 @@
     closeNavigation();
   }
 
-  navigationButton.addEventListener('click', onNavigationClick);
-  contactsButton.addEventListener('click', onContactsClick);
+  listNavigation.addEventListener('click', onNavigationClick);
+  listContacts.addEventListener('click', onContactsClick);
 
   // Маска номера на инпут
 
