@@ -92,11 +92,16 @@
   openModal.addEventListener('click', onOpenClick);
   closeModal.addEventListener('click', onCloseClick);
 
+
+
   function validation(phone, name, isChecked) {
     var valid = true;
+    var newLocal = name.trim() === 0 || phone.length < 17 || isChecked === false;
 
-    if (name === 0 || phone.length < 18 || isChecked === false) {
+    if (newLocal) {
       valid = false;
+    } else {
+      sendButton.addEventListener('click', showQuestionsResult);
     }
 
     return valid;
@@ -151,14 +156,11 @@
     questionsResult.style.display = 'none';
   }
 
-  sendButton.addEventListener('click', showQuestionsResult);
-
   if (formModal) {
     formModal.addEventListener('submit', onSubmitModalForm);
   }
 
   if (questionsForm) {
-    validation();
     questionsForm.addEventListener('submit', onSubmitQuestionsForm);
   }
 

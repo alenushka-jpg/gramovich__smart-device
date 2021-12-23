@@ -179,9 +179,11 @@
   margin: 0;
   line-height: 22px;
   color: $primary-font;
-  white-space: break-spaces;
 }
 
+.advantage__list p {
+  white-space: break-spaces;
+}
 
 .advantage svg {
   fill: $additional-color;

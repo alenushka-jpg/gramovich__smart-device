@@ -2,7 +2,7 @@
 
 (function () {
   // Открытие модального окна по кнопке Заказать звонок
-  var body = document.querySelector('body');
+  // var body = document.querySelector('body');
   var openModal = document.querySelector('.page-header__button');
   var closeModal = document.querySelector('.modal-window__button-close');
   // var userForm = document.querySelector('#form-user');
@@ -10,7 +10,7 @@
   // var formPopup = modalWindow.querySelector('#form-popup');
   // var username = document.querySelector('[name=username]');
   var name = document.querySelector('[name=username]');
-  var phone = document.querySelector('[name=phone]');
+  // var phone = document.querySelector('[name=phone]');
   var listNavigation = document.querySelector('.page-footer__list-navigation');
   var listContacts = document.querySelector('.page-footer__list-contacts');
   var contactsButton = document.querySelector('.page-footer__contacts-button');
@@ -92,11 +92,16 @@
   openModal.addEventListener('click', onOpenClick);
   closeModal.addEventListener('click', onCloseClick);
 
+
+
   function validation(phone, name, isChecked) {
     var valid = true;
+    var newLocal = name.trim() === 0 || phone.length < 17 || isChecked === false;
 
-    if (name === 0 || phone.length < 18 || isChecked === false) {
+    if (newLocal) {
       valid = false;
+    } else {
+      sendButton.addEventListener('click', showQuestionsResult);
     }
 
     return valid;
@@ -151,14 +156,11 @@
     questionsResult.style.display = 'none';
   }
 
-  sendButton.addEventListener('click', showQuestionsResult);
-
   if (formModal) {
     formModal.addEventListener('submit', onSubmitModalForm);
   }
 
   if (questionsForm) {
-    validation();
     questionsForm.addEventListener('submit', onSubmitQuestionsForm);
   }
 
