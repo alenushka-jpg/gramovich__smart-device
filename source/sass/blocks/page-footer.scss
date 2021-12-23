@@ -84,8 +84,17 @@
   text-transform: uppercase;
   color: $additional-dark;
 
+
   @media (max-width: $mobile-width) {
+    padding: 29px 15px 27px;
     margin-bottom: 0;
+  }
+}
+
+.page-footer__list-navigation > a,
+.page-footer__list-contacts > a {
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 
@@ -139,7 +148,7 @@
   position: relative;
 
   @media (max-width: $mobile-width) {
-    padding: 29px 15px 27px;
+
     width: 100%;
     border-top: 1px solid rgba($grey, 0.2);
   }
@@ -225,6 +234,20 @@
 .page-footer__list-contacts--open,
 .no-js {
   @media (max-width: $mobile-width) {
+    .page-footer__link h3 {
+      padding-bottom: 0;
+    }
+
+    ul {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 26px;
+
+      &:first-child {
+        padding-bottom: 0;
+      }
+    }
+
     button {
       background-image: url("../img/svg/minus.svg");
       height: 2px;
