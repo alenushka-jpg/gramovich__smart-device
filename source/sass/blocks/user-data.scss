@@ -166,6 +166,7 @@
   line-height: 22px;
   background-color: $form-color;
   border: none;
+  border-radius: 0;
   color: $basic-white;
 
   &::placeholder {
