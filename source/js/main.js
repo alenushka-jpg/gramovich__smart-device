@@ -11,7 +11,7 @@
   var inputsTel = document.querySelectorAll('input[type="tel"]');
   var overlay = document.querySelector('.overlay');
 
-  var mainBody= document.querySelector('.main-body');
+  var mainBody = document.querySelector('.main-body');
   var links = mainBody.querySelectorAll('a');
   var inputs = mainBody.querySelectorAll('input');
   var buttons = mainBody.querySelectorAll('button');
@@ -85,8 +85,7 @@
   openModal.addEventListener('click', onOpenClick);
   closeModal.addEventListener('click', onCloseClick);
 
-
-
+  // eslint-disable-next-line no-shadow
   function validation(phone, name, isChecked) {
     var valid = true;
     var newLocal = name.trim() === 0 || phone.length < 17 || isChecked === false;
@@ -212,6 +211,7 @@
 
   // Маска номера на инпут
 
+  // eslint-disable-next-line no-undef
   var im = new Inputmask('+7 (999) 999-99-99');
   im.mask(inputsTel);
 })();
