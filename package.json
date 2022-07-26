@@ -1,42 +1,50 @@
 {
-  "name": "gramovich__smart-device",
-  "version": "1.0.0",
-  "description": "Проект \"smart-device\" Грамович Алёны для Акселератора",
+  "name": "smart-device",
+  "private": true,
+  "description": "Учебный проект smart-device",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x",
-    "gulp": "4.0.x",
-    "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "4.0.x",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-svgstore": "^7.0.1",
-    "gulp-webp": "^4.0.1",
-    "pixel-glass": "^1.0.13",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "10.4.0",
+    "babel-eslint": "^10.1.0",
+    "browser-sync": "2.27.7",
+    "del": "^6.1.0",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.3.11",
+    "postcss-csso": "^6.0.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.11"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
-    "build": "gulp build",
-    "start": "gulp start",
-    "webp": "gulp webp",
-    "sprite": "gulp sprite"
+    "lint": "npm run editorconfig && npm run stylelint",
+    "build": "npx gulp build",
+    "start": "gulp",
+    "html": "npx gulp html",
+    "script": "npx gulp script",
+    "images": "npx gulp optimizeImages",
+    "images-copy": "npx gulp copyImages",
+    "webp": "npx gulp createWebp",
+    "svg": "npx gulp svg",
+    "sprite": "npx gulp sprite",
+    "copy": "npx gulp copy",
+    "clean": "npx gulp clean"
   },
   "browserslist": [
     "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -44,12 +52,10 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "^16"
   },
-  "dependencies": {
-    "del": "^4.1.1"
-  }
+  "type": "module"
 }

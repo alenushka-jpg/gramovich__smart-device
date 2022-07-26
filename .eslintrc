@@ -6,5 +6,6 @@
     "node": true
   },
 
-  "extends": "htmlacademy/es5"
+  "extends": "htmlacademy/ES6",
+  "parser": "babel-eslint"
 }
